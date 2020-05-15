@@ -1,14 +1,143 @@
 <!DOCTYPE html>
 <HTML LANG="en">
 <HEAD>
-	<TITLE>GEMS TAB</TITLE>
+	<TITLE>Guitar Exercises, Melodies &amp; Scales in tablature</TITLE>
     <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<LINK rel="stylesheet" type="text/css" href="./stylesheet.css"> 
+
+<style>
+/* Style the tab */
+.sidetitle {
+	height: 100%;
+	width: 16.66%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	color: #fff;
+	<!-- overflow-x: hidden; -->
+	padding: 1vw;
+	float: left;
+}
+
+.tab {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 15%;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+	width: 16.66%;
+	height: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 2vh;
+  width: 100%;
+  height: 8.3vh;
+	border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 2vw;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	left: 30%;
+	padding: 0px 12px;
+	border: 1px solid #ccc;
+	width:  65%;
+	height:  65%;
+	border-left: none;
+	overflow: scroll;
+}
+
+#Pearl{
+	background-color: #eae0c8;
+}
+
+</style>
+
 </HEAD>
 <BODY>
-	Hello world.
+<DIV class="sidetitle">
+	<SPAN STYLE="font-size: 10vh;">G</SPAN>&nbsp;uitar<BR />
+	<SPAN STYLE="font-size: 10vh;">E</SPAN>&nbsp;xercises<BR />
+	<SPAN STYLE="font-size: 10vh;">M</SPAN>&nbsp;elodies<BR />
+	<SPAN STYLE="font-size: 10vh;">S</SPAN>&nbsp;cales<BR />
+	</DIV>
+<div class="tab">
+	<button class="tablinks" onclick="openLevel(event, 'Pearl')" id="defaultOpen">&#8199;1 Pearl</button>
+	<button class="tablinks" onclick="openCity(event, 'Paris')">&#8199;2 Opal</button>
+	<button class="tablinks" onclick="openCity(event, 'Tokyo')">&#8199;3</button>
+	<button class="tablinks" onclick="openCity(event, 'Paris')">&#8199;4</button>
+	<button class="tablinks" onclick="openCity(event, 'Tokyo')">&#8199;5</button>
+	<button class="tablinks" onclick="openCity(event, 'Paris')">&#8199;6</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">&#8199;7</button>
+	<button class="tablinks" onclick="openCity(event, 'Paris')">&#8199;8</button>
+	<button class="tablinks" onclick="openCity(event, 'Tokyo')">&#8199;9 Topaz</button>
+	<button class="tablinks" onclick="openCity(event, 'Tokyo')">10</button>
+	<button class="tablinks" onclick="openCity(event, 'Tokyo')">11</button>
+	<button class="tablinks" onclick="openCity(event, 'Tokyo')">12</button>
+</div>	
+
+<div id="Pearl" class="tabcontent">
+	<h3>Pearl Level</h3>
+	<OL TYPE="i">
+	<LI><a href="./foo.html">12-bar blues progression in fifths and sixths</a></LI>
+	</OL>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openLevel(evt, Level) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(Level).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
 	<HR>
-# GEMS-TAB.github.io
-<BR />
-website
-  </BODY>
-	</HTML>
+	GEMS-TAB.github.io
+</BODY>
+</HTML>
