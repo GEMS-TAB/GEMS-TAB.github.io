@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <HTML LANG="en">
 <HEAD>
-	<TITLE>Guitar Exercises, Melodies &amp; Scales in tablature</TITLE>
+	<TITLE>GEMS-TAB | Guitar Exercises, Melodies &amp; Scales in tablature</TITLE>
     <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<LINK rel="stylesheet" type="text/css" href="./stylesheet.css"> 
 
@@ -39,7 +39,7 @@
   color: black;
   padding: 2vh;
   width: 100%;
-  height: 8.3vh;
+  height: 7vh;
 	border: none;
   outline: none;
   text-align: left;
@@ -51,6 +51,7 @@
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
+	color: #fff;
 }
 
 /* Create an active/current "tab button" class */
@@ -65,17 +66,106 @@
 	top: 0;
 	left: 30%;
 	padding: 0px 12px;
-	border: 1px solid #ccc;
-	width:  65%;
+	border: 10px solid #ccc;
+	width:  60%;
 	height:  65%;
 	border-left: none;
 	overflow: scroll;
 }
 
 #Pearl{
-	background-color: #eae0c8;
+	background-color: #fefbfb;
+	border: 7vh solid #F5DDDA
 }
-
+#defaultOpen{
+	background-color: #F5DDDA
+}
+#Opal{
+	background-color: #e5f7f4;
+	border: 7vh solid #6ED1B4;
+}
+#Opalbutton{
+	background-color: #6ED1B4;
+}
+#Turquoise{
+	background-color: #eff9f8;
+	border: 7vh solid #45B8AC;
+}
+#Turquoisebutton{
+	background-color: #45B8AC;
+}
+#Peridot{
+	background-color: #f6f9f1;
+	border: 7vh solid #7B9344;
+}
+#Peridotbutton{
+	background-color: #7B9344;
+}
+#Garnet{
+	background-color: #f6e6e8;
+	border: 7vh solid #943543;
+}
+#Garnetbutton{
+	background-color: #943543;
+}
+#Amethyst{
+	background-color: #f4ecf2;
+	border: 7vh solid #824B77;
+}
+#Amethystbutton{
+	background-color: #824B77;
+}
+#Aquamarine{
+	background-color: #e3eff4;
+	border: 7vh solid #9DC6D8;	
+}
+#Aquamarinebutton{
+	background-color: #9DC6D8;
+}
+#Emerald{
+	background-color: #e6fff9;
+	border: 7vh solid #009874;
+}
+#Emeraldbutton{
+	background-color: #009874;
+}
+#Topaz{
+	background-color: #fbf3ed;
+	border: 7vh solid #D3833D;
+}
+#Topazbutton{
+	background-color: #D3833D;
+}
+#Sapphire{
+	background-color: #e4f5fb;
+	border: 7vh solid #126180;
+}
+#Sapphirebutton{
+	background-color: #126180;
+}
+#Ruby{
+	background-color: #fddbde;
+	border: 7vh solid #bb0a1e;
+}
+#Rubybutton{
+	background-color: #bb0a1e;
+}
+#Diamond{
+	background-color: rgba(255, 255, 255, .15);  
+ 	backdrop-filter: blur(5px);
+	border: 7vh solid rgba(255, 255, 255, .15);
+}
+#Diamondbutton{
+	background-color: rgba(255, 255, 255, .15);  
+ 	backdrop-filter: blur(5px);
+}
+#Theory{
+	background-color: #fff;
+	border: 7vh solid #bb0a1e;
+}
+#Theorybutton{
+	background-color: #fff;
+}
 </style>
 
 </HEAD>
@@ -88,17 +178,19 @@
 	</DIV>
 <div class="tab">
 	<button class="tablinks" onclick="openLevel(event, 'Pearl')" id="defaultOpen">&#8199;1 Pearl</button>
-	<button class="tablinks" onclick="openCity(event, 'Paris')">&#8199;2 Opal</button>
-	<button class="tablinks" onclick="openCity(event, 'Tokyo')">&#8199;3</button>
-	<button class="tablinks" onclick="openCity(event, 'Paris')">&#8199;4</button>
-	<button class="tablinks" onclick="openCity(event, 'Tokyo')">&#8199;5</button>
-	<button class="tablinks" onclick="openCity(event, 'Paris')">&#8199;6</button>
-    <button class="tablinks" onclick="openCity(event, 'Paris')">&#8199;7</button>
-	<button class="tablinks" onclick="openCity(event, 'Paris')">&#8199;8</button>
-	<button class="tablinks" onclick="openCity(event, 'Tokyo')">&#8199;9 Topaz</button>
-	<button class="tablinks" onclick="openCity(event, 'Tokyo')">10</button>
-	<button class="tablinks" onclick="openCity(event, 'Tokyo')">11</button>
-	<button class="tablinks" onclick="openCity(event, 'Tokyo')">12</button>
+	<button class="tablinks" onclick="openLevel(event, 'Opal')" id="Opalbutton">&#8199;2 Opal</button>
+	<button class="tablinks" onclick="openLevel(event, 'Turquoise')"  id="Turquoisebutton">&#8199;3 Turquoise</button>
+	<button class="tablinks" onclick="openLevel(event, 'Peridot')" id="Peridotbutton">&#8199;4 Peridot</button>
+	<button class="tablinks" onclick="openLevel(event, 'Garnet')" id="Garnetbutton">&#8199;5 Garnet</button>
+	<button class="tablinks" onclick="openLevel(event, 'Amethyst')" id="Amethystbutton">&#8199;6 Amethyst</button>
+    <button class="tablinks" onclick="openLevel(event, 'Aquamarine')" id="Aquamarinebutton">&#8199;7 Aquamarine</button>
+	<button class="tablinks" onclick="openLevel(event, 'Emerald')"  id="Emeraldbutton">&#8199;8 Emerald</button>
+	<button class="tablinks" onclick="openLevel(event, 'Topaz')" id="Topazbutton">&#8199;9 Topaz</button>
+	<button class="tablinks" onclick="openLevel(event, 'Sapphire')" id="Sapphirebutton">10 Sapphire</button>
+	<button class="tablinks" onclick="openLevel(event, 'Ruby')" id="Rubybutton">11 Ruby</button>
+	<button class="tablinks" onclick="openLevel(event, 'Diamond')"  id="Diamondbutton">12 Diamond</button>
+	<HR>
+	<button class="tablinks" onclick="openLevel(event, 'Theory')"  id="Theorybutton">&#8199;&#8199; Theory</button>
 </div>	
 
 <div id="Pearl" class="tabcontent">
@@ -108,14 +200,64 @@
 	</OL>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+<div id="Opal" class="tabcontent">
+  <h3>Opal Level</h3>
+  <p>Forthcoming.</p> 
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
+<div id="Turquoise" class="tabcontent">
+  <h3>Turquoise Level</h3>
+  <p>Forthcoming.</p>
+</div>
+
+<div id="Peridot" class="tabcontent">
+  <h3>Peridot Level</h3>
+  <p>Forthcoming.</p>
+</div>
+
+<div id="Garnet" class="tabcontent">
+  <h3>Garnet Level</h3>
+  <p>Forthcoming.</p>
+</div>
+
+<div id="Amethyst" class="tabcontent">
+  <h3>Amethyst Level</h3>
+  <p>Forthcoming.</p>
+</div>
+
+<div id="Aquamarine" class="tabcontent">
+  <h3>Aquamarine Level</h3>
+  <p>Forthcoming.</p>
+</div>
+
+<div id="Emerald" class="tabcontent">
+  <h3>Emerald Level</h3>
+  <p>Forthcoming.</p>
+</div>
+
+<div id="Topaz" class="tabcontent">
+  <h3>Topaz Level</h3>
+  <p>Forthcoming.</p>
+</div>
+
+<div id="Sapphire" class="tabcontent">
+  <h3>Sapphire Level</h3>
+  <p>Forthcoming.</p>
+</div>
+
+<div id="Ruby" class="tabcontent">
+  <h3>Ruby Level</h3>
+  <p>Forthcoming.</p>
+</div>
+
+<div id="Diamond" class="tabcontent">
+  <h3>Diamond Level</h3>
+  <p>Forthcoming.</p>
+</div>
+
+<div id="Theory" class="tabcontent">
+  <h3>Theory</h3>
+  <p>Forthcoming.</p>
 </div>
 
 <script>
@@ -137,7 +279,8 @@ function openLevel(evt, Level) {
 document.getElementById("defaultOpen").click();
 </script>
 
-	<HR>
-	GEMS-TAB.github.io
+<DIV STYLE="position: fixed; z-index: 4; bottom: 0; right: 0">
+GEMS-TAB.github.io
+<DIV>	
 </BODY>
 </HTML>
