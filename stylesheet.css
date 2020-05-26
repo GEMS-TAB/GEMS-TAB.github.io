@@ -8,7 +8,7 @@ a:hover {transform: scale(1.1); text-decoration: none;}
 a:active {color: inherit; text-decoration: underline;}
 
 body {
-	background-color: #F1F1D4;
+/*	background-color: #F1F1D4; */
 	color: black;
 	font-family:monospace; 	  
 	font-size: 1.3vw;  
@@ -36,6 +36,22 @@ body {
 	text-align: right;
 	padding: 1vh;
 	}
+
+.PearlBody{
+	background-color: #fefbfb;
+	color: black;
+}
+
+.PearlNavBar{
+	background-color: #F5DDDA;
+	color: #AB9A98;
+	position: fixed;
+	left: 0;
+	top: 1vh;
+	width: 100%;
+	text-align: left;
+	padding: 1vh;
+}
 
 .Opal{
 	background-color: #e5f7f4;
