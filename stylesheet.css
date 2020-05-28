@@ -190,6 +190,11 @@ input:checked + .slider:before {
 }
 
 
+.NoLink{
+color: Gainsboro;
+}
+
+
 .MM{
 	display: none;		
 	}
