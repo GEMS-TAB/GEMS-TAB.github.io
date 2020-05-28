@@ -1,3 +1,5 @@
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
+
 a:link {
 	color: inherit;
 	text-decoration: none;
@@ -10,8 +12,9 @@ a:active {color: inherit; text-decoration: underline;}
 body {
 /*	background-color: #F1F1D4; */
 	color: black;
-	font-family:monospace; 	  
-	font-size: 1.3vw;  
+	font-family: 'Fira Code', monospace; 	  
+	font-size: 1.3vw;
+	font-variant-ligatures: discretionary-ligatures;
 	}
 	
 	H2 {
