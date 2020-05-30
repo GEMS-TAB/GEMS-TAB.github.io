@@ -218,6 +218,12 @@ color: Gainsboro;
 	.count{visibility: hidden; font-size: 1.3vw; color: #77dd77;}
 	.lyrics1{display: none; font-size: 1.3vw; color: #303030;}
 	.lyrics2{font-size: 1.3vw; color: #303030;}
+	
+@media print {
+	.Pearl{display:none;}
+	.OpalNavBar{display:none;}
+	.TurquoiseNavBar{display:none;}
+}
 
 
 
