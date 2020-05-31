@@ -4,6 +4,9 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Cousine&display=swap" rel="stylesheet);
 
+@import url(https://db.onlinewebfonts.com/c/51b7a96dcc46285ab098bcf7f1038a07?family=Liberation+Mono);
+
+@import url(https://db.onlinewebfonts.com/c/49b13300202f25c085c731d216fab421?family=PT+Mono);
 
 a:link {
 	color: inherit;
@@ -17,7 +20,7 @@ a:active {color: inherit; text-decoration: underline;}
 body {
 /*	background-color: #F1F1D4; */
 	color: black;
-	font-family: 'Cousine','Hack','Fira Code', monospace; 	  
+	font-family: 'PT Mono','Liberation Mono','Cousine','Hack','Fira Code', monospace; 	  
 	font-size: 1.3vw;
 	font-variant-ligatures: common-ligatures;
 	}
