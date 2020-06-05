@@ -19,7 +19,7 @@ a:active {color: inherit; text-decoration: underline;}
 
 body {
 /*	background-color: #F1F1D4; */
-	color: black;
+	color: #696969;
 	font-family: 'PT Mono','Liberation Mono','Cousine','Hack','Fira Code', monospace; 	  
 	font-size: 1.3vw;
 	font-variant-ligatures: common-ligatures;
@@ -34,7 +34,11 @@ body {
 	color: white;
 	text-align: center;
 	}
-	
+
+strong{
+	color: black;
+}
+
 .Pearl{
 /*	background-color: #F5DDDA; */
 	background-color: #eae0c8; 
@@ -217,10 +221,12 @@ color: Gainsboro;
 	.LHfiller{display: none; font-size: 1.3vw; color: inherit;}
 	.RH{visibility: hidden; font-size: 1.3vw; color: #779ecb;}
 	.measure{font-size: 0.9vw;}
-	.stems{visibility: hidden;}
+	.stems{visibility: hidden; color: black;}
 	.count{visibility: hidden; font-size: 1.3vw; color: #77dd77;}
 	.lyrics1{display: none; font-size: 1.3vw; color: #303030;}
 	.lyrics2{font-size: 1.3vw; color: #303030;}
+	.Detail{display: none; font-size: inherit; color: inherit; font-family: inherit;}
+	.Pedagogy{display: none; font-size: 1.0vw; color: inherit; font-family: cursive; color: navy;}	
 	
 @media print {
 	.Pearl{display:none;}
