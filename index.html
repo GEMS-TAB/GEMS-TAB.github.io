@@ -5,10 +5,10 @@
     <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<LINK rel="stylesheet" type="text/css" href="./stylesheet.css"> 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css">
-
+<!--
 	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101258268);</script>
 	<script async src="//static.getclicky.com/js"></script>
-	
+-->	
 <style>
 /* Style the tab */
 .sidetitle {
@@ -236,9 +236,22 @@
 	<HR>
 	</SPAN>
 	<OL TYPE="1">
-	<LI STYLE="color: #F5DDDA"><SPAN STYLE="color: black"><a href="./Pearl/Ex1.html">Exercise 1</a><SPAN CLASS="Pedagogy"><P>Introduction to open strings</P></SPAN></SPAN></LI>
-	<LI STYLE="color: #F5DDDA"><SPAN STYLE="color: black"><a href="./Pearl/VeryBasicBlues.html">Blues Progression:  Very Basic<SPAN CLASS="Detail">&nbsp;12-bar</SPAN></a></SPAN></LI>
-	<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Introduction to Simple Chords with Complicated Names</SPAN></LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<a href="./Pearl/Ex1.html">Exercise 1</a>
+			<SPAN CLASS="Pedagogy"><P>An introduction to the top three open strings.  The student's focus should be on the right hand technique.</P></SPAN>
+		</SPAN>
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN STYLE="color: black">
+		<a href="./Pearl/VeryBasicBlues.html">Blues Progression:  Very Basic<SPAN CLASS="Detail">&nbsp;12-bar</SPAN></a>
+		</SPAN>
+		<SPAN CLASS="Pedagogy"><P>An introduction to the bottom three open strings.  The student's focus should be on the right hand technique.</P></SPAN>
+	</LI>
+	<LI STYLE="color: #F5DDDA">
+		<SPAN CLASS="NoLink">&iquest; Introduction to Simple Chords with Complicated Names</SPAN>
+		<SPAN CLASS="Pedagogy"><P>An introduction to open string, unfretted, chords.  The student's focus should be on the right hand technique.</P></SPAN>		
+	</LI>
 	<BR />
 	<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Doo-Wop Progression:  Very Basic 8-bar</SPAN></LI>
 	<BR />	
@@ -517,10 +530,10 @@ GEMS-TAB.github.io
 		var x = document.getElementsByClassName("Detail");
 		var i;
 		for (i = 0; i < x.length; i++) {
-			if (x[i].style.display === "block") {
+			if (x[i].style.display === "inline-block") {
 				x[i].style.display = "none";
 			} else {
-				x[i].style.display = "block";
+				x[i].style.display = "inline-block";
 			}
 		}
 	}
