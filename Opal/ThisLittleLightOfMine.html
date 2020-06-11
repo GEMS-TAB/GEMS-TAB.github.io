@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+	<TITLE>This Little Light of Mine [TAB]</TITLE>
+    <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<LINK rel="stylesheet" type="text/css" href="../stylesheet.css"> 
+</HEAD>
+<BODY CLASS="Opal">
+<DIV CLASS="OpalNavBar">
+<SPAN STYLE="float: left;"><EM>
+<A HREF="../index.html">&laquo;</A>
+&emsp;
+<A HREF="../VeryBasicBlues.html">&lsaquo;</A>
+&emsp;
+<A HREF="./OldMacDonald.html">&rsaquo;</A>
+</EM>
+&emsp;
+<A HREF="#" onclick="window.print();return false;">&#x2761;</A>
+</SPAN>
+
+<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
+</DIV>
+
+
+
+
+<!-- The Modal -->
+<div id="SettingsModal" class="w3-modal">
+  <div class="modal-content">
+    <div class="w3-container">
+	<span onclick="document.getElementById('SettingsModal').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+<H3>Hide | Show</H3>
+<UL style="list-style-type:none;">
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showTempo()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Tempo
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showRH()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Right Hand
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showLH()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Left Hand
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showStems()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Rhythm
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showCount()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Count
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showLyrics()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Lyrics
+	</LI>
+</UL>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script>
+	function showTempo() {
+		var x = document.getElementsByClassName("MM");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "block") {
+				x[i].style.display = "none";
+			} else {
+				x[i].style.display = "block";
+			}
+		}
+	}
+</script>
+
+<script>
+		function showRH() {
+		var y = document.getElementsByClassName("RH");
+		var j;
+		for (j = 0; j < y.length; j++) {
+			if (y[j].style.visibility === "visible") {
+				y[j].style.visibility = "hidden";
+			} else {
+				y[j].style.visibility = "visible";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showLH() {
+		var x = document.getElementsByClassName("LHabove");
+		var y = document.getElementsByClassName("LHinline");
+		var z = document.getElementsByClassName("LHfiller");
+		var i;
+		var j;
+		var k;
+		
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "visible") {
+				x[i].style.visibility = "hidden";
+			} else {
+				x[i].style.visibility = "visible";
+			}
+		}
+
+		for (j = 0; j < y.length; j++) {
+			if (y[j].style.display === "inline") {
+				y[j].style.display = "none";
+			} else {
+				y[j].style.display = "inline";
+			}
+		}
+
+
+		for (k = 0; k < z.length; k++) {
+			if (z[k].style.display === "inline") {
+				z[k].style.display = "none";
+			} else {
+				z[k].style.display = "inline";
+			}
+		}
+
+}
+</script>
+
+<script>
+	function showStems() {
+		var x = document.getElementsByClassName("stems");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "visible") {
+				x[i].style.visibility = "hidden";
+			} else {
+				x[i].style.visibility = "visible";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showCount() {
+		var x = document.getElementsByClassName("count");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "visible") {
+				x[i].style.visibility = "hidden";
+			} else {
+				x[i].style.visibility = "visible";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showLyrics() {
+		var x = document.getElementsByClassName("lyrics1");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "block") {
+				x[i].style.display = "none";
+			} else {
+				x[i].style.display = "block";
+			}
+		}
+	}
+</script>
+	
+<DIV style="clear: both; font-size:3vw;">&emsp;</DIV>
+<DIV STYLE="clear: both;">
+<H2>This Little Light of Mine</H2>
+<DIV STYLE="float: right;">
+Harry Dixon Loes
+</DIV>
+<SPAN CLASS="MM">MM = 76 BPM</SPAN><BR /><BR />
+</DIV>
+
+<!-- First Phrase.  Measures 1-4 -->
+<DIV STYLE="clear: left;">
+<!-- Measure 1 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 2 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 3 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 4 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+</DIV>
+<!-- Second Phrase.  Measures 5-8 -->
+<DIV STYLE="clear: left;">
+<!-- Measure 5 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 6 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 7 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 8 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+</DIV>
+<!-- Third Phrase.  Measures 9-12 -->
+<DIV STYLE="clear: left;">
+<!-- Measure 9 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 10 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 11 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 12 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+</DIV>
+<!-- Fourth Phrase.  Measures 13-16 -->
+<DIV STYLE="clear: left;">
+<!-- Measure 13 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 14 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 15 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+<!-- Measure 16 -->
+<SPAN STYLE="float: left;">
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<BR />
+</SPAN>
+</DIV>
+<DIV CLASS="lyrics1" STYLE="clear: left;">
+<P>
+This little light of mine, I'm gonna let it shine.<BR/>
+This little light of mine, I'm gonna let it shine,<BR/>
+This little light of mine, I'm gonna let it shine,<BR/>
+let it shine, let it shine, let it shine.<BR/>
+Hide it under a bushel - NO!<BR/>
+I'm gonna let it shine.<BR/>
+Hide it under a bushel - NO!<BR/>
+I'm gonna let it shine,<BR/>
+Hide it under a bushel - NO!<BR/>
+I'm gonna let it shine, Let it shine,<BR/>
+let it shine, let it shine.<BR/>
+Don't let Satan blow it out.<BR/>
+I'm gonna let it shine.<BR/>
+Don't let Satan blow it out.<BR/>
+I'm gonna let it shine<BR/>
+Don't let Satan blow it out.<BR/>
+I'm gonna let it shine,<BR/>
+let it shine, let it shine, let it shine.<BR/>
+Let it shine til Jesus comes.<BR/>
+I'm gonna let it shine.<BR/>
+Let it shine til Jesus comes.<BR/>
+I'm gonna let it shine,<BR/>
+Let it shine til Jesus comes.<BR/>
+I'm gonna let it shine.<BR/>
+let it shine, let it shine, let it shine.<BR/>
+This little light of mine, I'm gonna let it shine.<BR/>
+This little light of mine, I'm gonna let it shine,<BR/>
+This little light of mine, I'm gonna let it shine,<BR/>
+let it shine, let it shine, let it shine.<BR/>
+let it shine, let it shine, let it shine.<BR/>
+
+</P>
+</DIV>
+</BODY>
+</HTML>
