@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <HTML LANG="en">
 <HEAD>
-	<TITLE>Blues Progression In Fifths</TITLE>
+	<TITLE>&#128142; Very Basic Blues Progression</TITLE>
     <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<LINK rel="stylesheet" type="text/css" href="../stylesheet.css"> 
 </HEAD>
@@ -10,15 +10,16 @@
 
 
 <DIV CLASS="Pearl">
-<SPAN STYLE="float: left;"><STRONG>
-<A HREF="../index.html">&#x2B99;</A>
+<SPAN STYLE="float: left;">
+<EM>
+	<A HREF="../index.html">&laquo;</A>
+	&emsp;
+	<A HREF="./Ex1.html">&lsaquo;</A>
+	&emsp;
+	<A HREF="./ByeBabyBunting.html">&rsaquo;</A>
+</EM>
 &emsp;
-<A HREF="../index.html">&#x2B98;</A>
-&emsp;
-<A HREF="../Opal/IsTheBy.html">&#x2B9A;</A>
-</STRONG>
-&emsp;
-<A HREF="#" onclick="window.print();return false;">&#128438;</A>
+<A HREF="#" onclick="window.print();return false;">&#x2761;</A>
 </SPAN>
 
 <BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
@@ -70,12 +71,21 @@
 		</label>
 		&emsp;Count
 	</LI>
+	<!--
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
 		<input type="checkbox" onclick="showLyrics()">
 		<span class="slider round"></span>
 		</label>
 		&emsp;Lyrics
+	</LI>
+	-->
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showChords()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Accompaniment 
 	</LI>
 </UL>
     </div>
@@ -189,17 +199,32 @@
 		}
 	}
 </script>
+
+<script>
+	function showChords() {
+		var x = document.getElementsByClassName("Accompaniment");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "visible") {
+				x[i].style.visibility = "hidden";
+			} else {
+				x[i].style.visibility = "visible";
+			}
+		}
+	}
+</script>
 	
 <DIV style="clear: both; font-size:3vw;">&emsp;</DIV>
 <DIV STYLE="clear: both;">
-<H2>12-bar blues progression with fifths</H2>
+<H2>Very Basic Blues Progression</H2>
 <SPAN CLASS="MM">MM = 80</SPAN><BR /><BR />
 </DIV>
 <!-- First Phrase.  Measures 1-4 -->
 <DIV STYLE="clear: left;">
 <!-- Measure 1 -->
 <SPAN STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
+<!--G2--><SPAN CLASS="Accompaniment">&nbsp;&nbsp;&nbsp;A7</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">&emsp;1</SPAN><BR />
 <!--E-->E<SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
 <!--B-->B<SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
@@ -213,6 +238,7 @@
 </SPAN>
 <!-- Measure 2 -->
 <SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&nbsp;</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">2</SPAN><BR />
 <!--E--><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -227,6 +253,7 @@
 </SPAN>
 <!-- Measure 3 -->
 <SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&nbsp;</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">3</SPAN><BR />
 <!--E--><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -241,6 +268,7 @@
 </SPAN>
 <!-- Measure 4 -->
 <SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&nbsp;</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">4</SPAN><BR />
 <!--E--><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;<BR />
@@ -258,6 +286,7 @@
 <DIV STYLE="clear: left;">
 <!-- Measure 5 -->
 <SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&nbsp;&nbsp;&nbsp;D7</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">&emsp;5</SPAN><BR />
 <!--E-->E<SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -272,6 +301,7 @@
 </SPAN>
 <!-- Measure 6 -->
 <SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&nbsp;</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">6</SPAN><BR />
 <!--E--><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -286,6 +316,7 @@
 </SPAN>
 <!-- Measure 7 -->
 <SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&nbsp;&nbsp;A7</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">7</SPAN><BR />
 <!--E--><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -300,6 +331,7 @@
 </SPAN>
 <!-- Measure 8 -->
 <SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&nbsp;</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">8</SPAN><BR />
 <!--E--><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;<BR />
@@ -317,6 +349,7 @@
 <DIV STYLE="clear: left;">
 <!-- Measure 9 -->
 <SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&nbsp;&nbsp;&nbsp;E7</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">&emsp;9</SPAN><BR />
 <!--E-->E<SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -332,6 +365,7 @@
 </SPAN>
 <!-- Measure 10 -->
 <SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&nbsp;&nbsp;D7</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">10</SPAN><BR />
 <!--E--><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -346,6 +380,7 @@
 </SPAN>
 <!-- Measure 11 -->
 <SPAN STYLE="float: left;">
+<!--G2--><SPAN CLASS="Accompaniment">&nbsp;&nbsp;A7</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">11</SPAN><BR />
 <!--E--><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -360,16 +395,17 @@
 </SPAN>
 <!-- Measure 12 -->
 <SPAN STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&SquareIntersection;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
+<!--G2--><SPAN CLASS="Accompaniment">&nbsp;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">12</SPAN><BR />
-<!--E--><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2556;<BR />
-<!--B--><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
-<!--G--><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
-<!--D-->&#x2500;&#x2500;<STRONG>2</STRONG><SPAN CLASS="LHinline">&sup1;</SPAN>&#x2500;&#x2500;&#x2500;<STRONG>2</STRONG><SPAN CLASS="LHinline">&sup1;</SPAN>&#x2500;&#x2500;&#x2500;<STRONG>2</STRONG><SPAN CLASS="LHinline">&sup1;</SPAN>&#x2500;&#x2500;&#x2500;<STRONG>2</STRONG><SPAN CLASS="LHinline">&sup1;</SPAN>&#x2500;&#x2500;&#x2500;&#x2562;<BR />
-<!--A-->&#x2500;&#x2500;<STRONG>0</STRONG><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2562;<BR />
-<!--E--><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN><SPAN CLASS="LHfiller">&#x2500;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#124;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&#124;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&#124;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;&#124;<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;2<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;3<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;&nbsp;&nbsp;4<SPAN CLASS="LHfiller">&nbsp;</SPAN>&nbsp;</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2556;<BR />
+<!--B-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--A-->&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
+<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
 </DIV>
