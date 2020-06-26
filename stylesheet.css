@@ -216,6 +216,8 @@ color: Gainsboro;
 .strings{
 	font-size: 1.3vw;
 	}
+
+.Accompaniment{visibility: hidden; font-size: 1.3vw; color: black;}
 .LHabove{visibility: hidden; font-size: 1.3vw; color: #c23b22; font-style: italic;}
 	.LHinline{display: none; font-size: 1.3vw; color: #c23b22; font-style: italic;}
 	.LHfiller{display: none; font-size: 1.3vw; color: inherit;}
@@ -226,7 +228,10 @@ color: Gainsboro;
 	.lyrics1{display: none; font-size: 1.3vw; color: #303030;}
 	.lyrics2{font-size: 1.3vw; color: #303030;}
 	.Detail{display: none; font-size: inherit; color: inherit; font-family: inherit;}
-	.Pedagogy{display: none; font-size: 1.0vw; color: inherit; font-family: cursive; color: navy;}	
+	.Pedagogy{display: none; font-size: 1.0vw; color: inherit; font-family: cursive; color: navy;}
+	
+.Range{font-family: 'PT Mono','Liberation Mono','Cousine','Hack','Fira Code', monospace; font-size: 0.9vw;}
+.Attained{background-color: rgba(255,255,0,0.15); color: inherit;}
 	
 @media print {
 	.Pearl{display:none;}
