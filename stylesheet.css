@@ -227,11 +227,15 @@ color: Gainsboro;
 	.count{visibility: hidden; font-size: 1.3vw; color: #77dd77;}
 	.lyrics1{display: none; font-size: 1.3vw; color: #303030;}
 	.lyrics2{font-size: 1.3vw; color: #303030;}
+	.duo{display: none;}
+	.DuoInline{display: none;}
+ 
 	.Detail{display: none; font-size: inherit; color: inherit; font-family: inherit;}
 	.Pedagogy{display: none; font-size: 1.0vw; color: inherit; font-family: cursive; color: navy;}
+
 	
-.Range{font-family: 'PT Mono','Liberation Mono','Cousine','Hack','Fira Code', monospace; font-size: 0.9vw;}
-.Attained{background-color: rgba(255,255,0,0.15); color: inherit;}
+.Range{font-family: 'PT Mono','Liberation Mono','Cousine','Hack','Fira Code',monospace;  font-size: 0.9vw;}
+.Attained{background-color: rgba(255,255,0,0.20); color: inherit;}
 	
 @media print {
 	.Pearl{display:none;}
