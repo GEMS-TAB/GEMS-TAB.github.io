@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <HTML LANG="en">
 <HEAD>
-	<TITLE>This Little Light of Mine [TAB]</TITLE>
+	<TITLE>&#128142; This Little Light of Mine [TAB]</TITLE>
     <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<LINK rel="stylesheet" type="text/css" href="../stylesheet.css"> 
 </HEAD>
@@ -39,6 +39,7 @@
 		</label>
 		&emsp;Tempo
 	</LI>
+	<!--
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
 		<input type="checkbox" onclick="showRH()">
@@ -46,6 +47,8 @@
 		</label>
 		&emsp;Right Hand
 	</LI>
+	-->
+	<!--
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
 		<input type="checkbox" onclick="showLH()">
@@ -53,6 +56,8 @@
 		</label>
 		&emsp;Left Hand
 	</LI>
+	-->
+	<!--
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
 		<input type="checkbox" onclick="showStems()">
@@ -60,6 +65,7 @@
 		</label>
 		&emsp;Rhythm
 	</LI>
+	-->
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
 		<input type="checkbox" onclick="showCount()">
@@ -74,6 +80,15 @@
 		</label>
 		&emsp;Lyrics
 	</LI>
+	<!--
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showDuet()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Duet 
+	</LI>
+	-->
 </UL>
     </div>
   </div>
@@ -186,6 +201,41 @@
 		}
 	}
 </script>
+
+<script>
+	function showDuet() {
+		var x = document.getElementsByClassName("duo");
+		var y = document.getElementsByClassName("DuoInline");
+		var z = document.getElementsByClassName("DuoHide");
+		
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "block") {
+				x[i].style.display = "none";
+			} else {
+				x[i].style.display = "block";
+			}
+		}
+		
+		var j;
+		for (j = 0; j < y.length; j++) {
+			if (y[j].style.display === "inline") {
+				y[j].style.display = "none";
+			} else {
+				y[j].style.display = "inline";
+			}
+		}
+		
+		var k;
+		for (k = 0; k < z.length; k++) {
+			if (z[k].style.display === "none") {
+				z[k].style.display = "inline";
+			} else {
+				z[k].style.display = "none";
+			}
+		}
+	}
+</script>
 	
 <DIV style="clear: both; font-size:3vw;">&emsp;</DIV>
 <DIV STYLE="clear: both;">
@@ -193,29 +243,92 @@
 <DIV STYLE="float: right;">
 Harry Dixon Loes
 </DIV>
-<SPAN CLASS="MM">MM = 76 BPM</SPAN><BR /><BR />
+<SPAN CLASS="MM">MM = 108 BPM</SPAN><BR /><BR />
 </DIV>
 
 <!-- First Phrase.  Measures 1-4 -->
 <DIV STYLE="clear: left;">
 <!-- Measure 1 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<SPAN CLASS="duo">&nbsp;&nbsp;&nbsp;Guitar 1</SPAN>
+<!--#--><SPAN CLASS="measure">&nbsp;&emsp;1</SPAN><BR />
+<!--E-->E&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--B-->B&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->G&#x251C;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--D-->D&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--A-->A&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--E-->E<SPAN CLASS="DuoHide">&#x2514;</SPAN><SPAN CLASS="DuoInline">&#x251C;</SPAN>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--C-->&nbsp;<SPAN CLASS="DuoHide">&nbsp;</SPAN><SPAN CLASS="DuoInline">&#x2502;</SPAN><SPAN CLASS="count">&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&plus;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+<SPAN CLASS="duo">
+&nbsp;&#x2502;<BR />
+&nbsp;&#x2502;&nbsp;Guitar 2<BR />
+<!--E-->E&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--B-->B&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->G&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+</SPAN>
 <BR />
 </SPAN>
 <!-- Measure 2 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<SPAN CLASS="duo">&nbsp;</SPAN>
+<!--#--><SPAN CLASS="measure">2</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--B-->&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+<SPAN CLASS="duo">
+&nbsp;<BR />
+&nbsp;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--B-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+</SPAN>
 <BR />
 </SPAN>
 <!-- Measure 3 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<SPAN CLASS="duo">&nbsp;</SPAN>
+<!--#--><SPAN CLASS="measure">3</SPAN><BR />
+<!--E-->&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--B-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&plus;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+<SPAN CLASS="duo">
+&nbsp;<BR />
+&nbsp;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+</SPAN>
 <BR />
 </SPAN>
 <!-- Measure 4 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<SPAN CLASS="duo">&nbsp;</SPAN>
+<!--#--><SPAN CLASS="measure">4</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;<BR />
+<!--B-->&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
+<!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+<SPAN CLASS="duo">
+&nbsp;<BR />
+&nbsp;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+</SPAN>
 <BR />
 </SPAN>
 </DIV>
@@ -223,22 +336,34 @@ Harry Dixon Loes
 <DIV STYLE="clear: left;">
 <!-- Measure 5 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">&nbsp;&emsp;5</SPAN><BR />
+<!--E-->E&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--C--><SPAN CLASS="DuoInline">&nbsp;</SPAN><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+<SPAN CLASS="duo">
+<!--E-->E&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+</SPAN>
 <BR />
 </SPAN>
 <!-- Measure 6 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">6</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 7 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">7</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 8 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">8</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 </DIV>
@@ -246,22 +371,34 @@ Harry Dixon Loes
 <DIV STYLE="clear: left;">
 <!-- Measure 9 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">&nbsp;&emsp;9</SPAN><BR />
+<!--E-->E&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--C--><SPAN CLASS="DuoInline">&nbsp;</SPAN><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+<SPAN CLASS="duo">
+<!--E-->E&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+</SPAN>
 <BR />
 </SPAN>
 <!-- Measure 10 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">10</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 11 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">11</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 12 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">12</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 </DIV>
@@ -269,22 +406,34 @@ Harry Dixon Loes
 <DIV STYLE="clear: left;">
 <!-- Measure 13 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">&nbsp;&emsp;13</SPAN><BR />
+<!--E-->E&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--C--><SPAN CLASS="DuoInline">&nbsp;</SPAN><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+<SPAN CLASS="duo">
+<!--E-->E&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
+</SPAN>
 <BR />
 </SPAN>
 <!-- Measure 14 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">14</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 15 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">15</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 16 -->
 <SPAN STYLE="float: left;">
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">16</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;<BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
 </DIV>
@@ -294,6 +443,8 @@ This little light of mine, I'm gonna let it shine.<BR/>
 This little light of mine, I'm gonna let it shine,<BR/>
 This little light of mine, I'm gonna let it shine,<BR/>
 let it shine, let it shine, let it shine.<BR/>
+</P>
+<P>
 Hide it under a bushel - NO!<BR/>
 I'm gonna let it shine.<BR/>
 Hide it under a bushel - NO!<BR/>
@@ -301,6 +452,8 @@ I'm gonna let it shine,<BR/>
 Hide it under a bushel - NO!<BR/>
 I'm gonna let it shine, Let it shine,<BR/>
 let it shine, let it shine.<BR/>
+</P>
+<P>
 Don't let Satan blow it out.<BR/>
 I'm gonna let it shine.<BR/>
 Don't let Satan blow it out.<BR/>
@@ -308,6 +461,8 @@ I'm gonna let it shine<BR/>
 Don't let Satan blow it out.<BR/>
 I'm gonna let it shine,<BR/>
 let it shine, let it shine, let it shine.<BR/>
+</P>
+<P>
 Let it shine til Jesus comes.<BR/>
 I'm gonna let it shine.<BR/>
 Let it shine til Jesus comes.<BR/>
@@ -315,12 +470,13 @@ I'm gonna let it shine,<BR/>
 Let it shine til Jesus comes.<BR/>
 I'm gonna let it shine.<BR/>
 let it shine, let it shine, let it shine.<BR/>
+<P>
+</P>
 This little light of mine, I'm gonna let it shine.<BR/>
 This little light of mine, I'm gonna let it shine,<BR/>
 This little light of mine, I'm gonna let it shine,<BR/>
 let it shine, let it shine, let it shine.<BR/>
 let it shine, let it shine, let it shine.<BR/>
-
 </P>
 </DIV>
 </BODY>
