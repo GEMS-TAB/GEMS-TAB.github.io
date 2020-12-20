@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+	<TITLE>&#128142; Song List</TITLE>
+    <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<LINK rel="stylesheet" type="text/css" href="./stylesheet.css"> 
+</HEAD>
+<BODY CLASS="Turquoise">
+<DIV CLASS="TurquoiseNavBar">
+	<SPAN STYLE="float: left;">
+		<EM>
+			<A HREF="./index.html">&laquo;</A>
+			&emsp;
+				&#x2007;
+			&emsp;
+				&#x2007;
+		</EM>
+		&emsp;
+			&#x2007;
+		&emsp;
+		<INPUT type="text" id="myInput" onkeyup="myFunction()" placeholder="&#x1f50d; Search for ..." title="Type in a name" CLASS="Gear">
+	</SPAN>
+</DIV>
+
+<!-- Scripts -->
+<script>
+function myFunction() {
+    var input = document.getElementById("myInput");
+    var filter = input.value.toUpperCase();
+    var table = document.getElementById("myTable");
+    var tr = table.getElementsByTagName("tr");
+    for (var i = 0; i < tr.length; i++) {
+        if (tr[i].textContent.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+        } else {
+            tr[i].style.display = "none";
+        }      
+    }
+}
+</script>
+
+<DIV style="clear: both; font-size:3vw;">&emsp;</DIV>
+<DIV STYLE="clear: both;">
+<H2>Index</H2>
+</DIV>
+
+
+<table id="myTable">
+  <tr class="header">
+	<th>Link</th>
+    <th>Composer</th>
+    <th>"Song" Title</th>
+	<th>Level</th>
+  </tr>
+  
+<!-- Anon. -->
+  <tr>
+	<td><A HREF="./Pearl/TwinkleTwinkleLittleStar.html">&#10228;</A></td>
+    <td>Anon.</td>
+    <td>Ah! vous dirai-je, maman</td>
+	<td>&#x2007;1&#x2007;Pearl</td>
+  </tr>
+
+  <tr>
+	<td><A HREF="./Pearl/ByeBabyBunting.html">&#10228;</A></td>
+    <td>Anon.</td>
+    <td>Bye, baby Bunting</td>
+	<td>&#x2007;1&#x2007;Pearl</td>
+  </tr>
+  
+  <tr>
+	<td><A HREF="./Turquoise/IsTheBy.html">&#10228;</A></td>
+    <td>Anon.</td>
+    <td>I's The B'y</td>
+	<td>&#x2007;3&#x2007;Turquoise</td>
+  </tr>
+ 
+  <tr>
+	<td><A HREF="./Opal/MwanaWaNnyabo.html">&#10228;</A></td>
+    <td>Anon.</td>
+    <td>Mwana wa Nnyabo</td>
+	<td>&#x2007;2&#x2007;Opal</td>
+  </tr>
+
+  <tr>
+	<td><A HREF="./Pearl/OldMacDonald.html">&#10228;</A></td>
+    <td>Anon.</td>
+    <td>Old MacDonald Had a Farm</td>
+	<td>&#x2007;1&#x2007;Pearl</td>
+  </tr>
+  
+  <tr>
+	<td><A HREF="./Pearl/TwinkleTwinkleLittleStar.html">&#10228;</A></td>
+    <td>Anon.</td>
+    <td>Twinkle, Twinkle, Little Star</td>
+	<td>&#x2007;1&#x2007;Pearl</td>
+  </tr>
+  
+<!-- Ferrer -->  
+  <tr>
+	<td><A HREF="./Turquoise/Ejercicio.html">&#10228;</A></td>
+    <td>José Ferrer Esteve de Fujadas</td>
+    <td>Ejercicio</td>
+	<td>&#x2007;3&#x2007;Turquoise</td>
+  </tr>
+
+<!-- Gruber --> 
+  <tr>
+	<td><A HREF="./Turquoise/SilentNight.html">&#10228;</A></td>
+    <td>Franz Xaver Gruber</td>
+    <td>Silent Night</td>
+	<td>&#x2007;3&#x2007;Turquoise</td>
+  </tr>
+
+  <tr>
+	<td><A HREF="./Turquoise/SilentNight.html">&#10228;</A></td>
+    <td>Franz Xaver Gruber</td>
+    <td>Stille Nacht, Heilige Nacht</td>
+	<td>&#x2007;3&#x2007;Turquoise</td>
+  </tr>
+
+<!-- Hill --> 
+  <tr>
+	<td><A HREF="./Pearl/GoodMorningToAll.html">&#10228;</A></td>
+    <td>Mildred Jane Hill</td>
+    <td>Good Morning to All</td>
+	<td>&#x2007;1&#x2007;Pearl</td>
+  </tr>
+
+  <tr>
+	<td><A HREF="./Opal/HappyBirthday.html">&#10228;</A></td>
+    <td>Mildred Jane Hill</td>
+    <td>Happy Birthday to You</td>
+	<td>&#x2007;2&#x2007;Opal</td>
+  </tr>
+  
+<!-- Lavallée --> 
+  <tr>
+	<td><A HREF="./Opal/OCanada.html">&#10228;</A></td>
+    <td>Calixa Lavallée</td>
+    <td>O Canada</td>
+	<td>&#x2007;2&#x2007;Opal</td>
+  </tr>
+ 
+<!-- Le Roy --> 
+  <tr>
+	<td><A HREF="./Opal/BransleDePoitou.html">&#10228;</A></td>
+    <td>Adrian Le Roy</td>
+    <td>Bransle de Poitou</td>
+	<td>&#x2007;2&#x2007;Opal</td>
+  </tr>
+  
+</table>
+
+
+
+
+<script language="javascript" type="text/javascript" src="../footer.txt"></script>
+</BODY>
+</HTML>

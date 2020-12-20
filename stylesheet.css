@@ -49,7 +49,6 @@ strong{
 	left: 0;
 	top: 1vh;
 	width: 100%;
-
 	text-align: right;
 	padding: 1vh;
 	}
@@ -247,6 +246,10 @@ color: Gainsboro;
 	
 	
 @media print {
+	
+	div {page-break-inside: avoid;}
+  
+	.Gear{display:none;}
 	.Pearl{display:none;}
 	.OpalNavBar{display:none;}
 	.TurquoiseNavBar{display:none;}
