@@ -3,9 +3,9 @@
 @import url(https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css);
 /*
 @import url(https://db.onlinewebfonts.com/c/51b7a96dcc46285ab098bcf7f1038a07?family=Liberation+Mono);
-*/
-@import url(https://db.onlinewebfonts.com/c/49b13300202f25c085c731d216fab421?family=PT+Mono);
 
+@import url(https://db.onlinewebfonts.com/c/49b13300202f25c085c731d216fab421?family=PT+Mono);
+*/
 @import url('https://fonts.googleapis.com/css2?family=Cousine&family=DM+Mono:ital,wght@1,500&display=swap');
 
 a:link {
@@ -92,6 +92,105 @@ strong{
 .TurquoiseNavBar{
 	background-color: #45B8AC;
 	color: #eff9f8;
+	position: fixed;
+	left: 0;
+	top: 1vh;
+	width: 100%;
+	text-align: left;
+	padding: 1vh;
+	}
+
+.Peridot{
+	background-color: #f6f9f1;
+	color: black;
+	}
+
+.PeridotNavBar{
+	background-color: #7B9344;
+	color: #f6f9f1;
+	position: fixed;
+	left: 0;
+	top: 1vh;
+	width: 100%;
+	text-align: left;
+	padding: 1vh;
+	}
+
+.Garnet{
+	background-color: #f6e6e8;
+	color: black;
+	}
+
+.GarnetNavBar{
+	background-color: #943543;
+	color: #f6e6e8;
+	position: fixed;
+	left: 0;
+	top: 1vh;
+	width: 100%;
+	text-align: left;
+	padding: 1vh;
+	}
+
+
+.Amethyst{
+	background-color: #f4ecf2;
+	color: black;
+	}
+
+.AmethystNavBar{
+	background-color: #824B77;
+	color: #f4ecf2;
+	position: fixed;
+	left: 0;
+	top: 1vh;
+	width: 100%;
+	text-align: left;
+	padding: 1vh;
+	}
+
+.Aquamarine{
+	background-color: #e3eff4;
+	color: black;
+	}
+
+.AquamarineNavBar{
+	background-color: #9DC6D8;
+	color: #e3eff4;
+	position: fixed;
+	left: 0;
+	top: 1vh;
+	width: 100%;
+	text-align: left;
+	padding: 1vh;
+	}
+
+.Emerald{
+	background-color: #e6fff9;
+	color: black;
+	}
+
+.EmeraldNavBar{
+	background-color: #009874;
+	color: #e6fff9;
+	position: fixed;
+	left: 0;
+	top: 1vh;
+	width: 100%;
+	text-align: left;
+	padding: 1vh;
+	}
+
+	
+.Diamond{
+	background-color: rgba(255, 255, 255, .15);
+	color: black;
+	}
+
+.DiamondNavBar{
+	background-color: #943543;
+	backdrop-filter: blur(5px);
+	color: #f6e6e8;
 	position: fixed;
 	left: 0;
 	top: 1vh;
@@ -207,8 +306,9 @@ input:checked + .slider:before {
 
 
 .NoLink{
-color: Gainsboro;
-}
+	color: Gainsboro;
+	opacity: 0.1;
+	}
 
 
 .MM{
@@ -253,6 +353,7 @@ color: Gainsboro;
 	.Pearl{display:none;}
 	.OpalNavBar{display:none;}
 	.TurquoiseNavBar{display:none;}
+	.PeridotNavBar{display:none;}
 }
 
 
