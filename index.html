@@ -5,13 +5,15 @@
     <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<META name="keywords" content="GEMS, guitar, exercises, melodies, scales, tab, tablature">
 	<LINK rel="stylesheet" type="text/css" href="./stylesheet.css"> 
-
+<!--
 	<meta name="google-site-verification" content="jM2B3HYwo_3AEsh7O01JUAD1_vblND-URrSru8qlE9g" />
 	<meta name="msvalidate.01" content="122A310580675420AD2FB259C2680F3F" />
 	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101258268);</script>
 	<script async src="//static.getclicky.com/js"></script>
+-->
 
 <!-- Clarity tracking code for https://gems-tab.github.io/ -->
+<!--
 <script>
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -19,15 +21,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "4sknplq6xu");
 </script>
-
-		<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "4skplj4tig");
-</script>
-		
+-->	
 <style>
 /* Style the tab */
 .sidetitle {
@@ -37,12 +31,12 @@
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #111;
+	background-color: #321414;
 	color: #fff;
 	<!-- overflow-x: hidden; -->
 	padding: 1vw;
 	float: left;
-	font-family: 'Syne Mono'; monospace;
+	font-family: 'Clicker Script', cursive;
 }
 
 .tab {
@@ -50,9 +44,9 @@
 	z-index: 2;
 	top: 0;
 	left: 15%;
-	border: 1px solid #ccc;
+	border: none;
 	<!-- background-color: #f1f1f1; -->
-	background-color: #555D50;
+	background-color: #321414;
 	width: 16.66%;
 	height: 100%;
 }
@@ -61,18 +55,19 @@
 .tab button {
 	display: block;
 	background-color: inherit;
-	color: #555D50;
+	color: #b04646;
 	padding: 2vh;
 	width: 100%;
 	height: 7%;
-	border: none;
-	outline: none;
+	outline-style: none;
 	text-align: left;
 	cursor: pointer;
 	transition: 0.3s;
 	font-size: 2vw;
+	font-family: 'Marck Script', cursive;
+	border: none;
 	opacity: 0.66;
-	font-family: 'Syne Mono'; monospace;
+	<!-- border-bottom: 3px solid #555D50; -->
 }
 
 /* Change background color of buttons on hover */
@@ -83,7 +78,8 @@
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-	color: black;
+	background-color: inherit;
+	color: #240e0e;
 	opacity: 1;
 }
 
@@ -108,8 +104,15 @@
 
 }
 #defaultOpen{
-	background-color: #F5DDDA;
+	background-color: #321414;
+	border-bottom: 3px solid #F5DDDA;
 }
+
+#defaultOpen.active{
+	background-color: #F5DDDA;
+	border-bottom: 3px solid #F5DDDA;
+}
+
 #Opal{
 	background-color: #e5f7f4;
 	border-color: #6ED1B4;
@@ -117,8 +120,14 @@
 	border-width: 0 0 0 7vh;
 }
 #Opalbutton{
-	background-color: #6ED1B4;
+	background-color: #321414;
+	border-bottom: 3px solid #6ED1B4;
 }
+#Opalbutton.active{
+	background-color: #6ED1B4;
+	border-bottom: 3px solid #6ED1B4;
+}
+
 #Turquoise{
 	background-color: #eff9f8;
 	border-color: #45B8AC;
@@ -126,8 +135,14 @@
 	border-width: 0 0 0 7vh;
 }
 #Turquoisebutton{
-	background-color: #45B8AC;
+	background-color: #321414;
+	border-bottom: 3px solid #45B8AC;
 }
+#Turquoisebutton.active{
+	background-color: #45B8AC;
+	border-bottom: 3px solid #45B8AC;
+}
+
 #Peridot{
 	background-color: #f6f9f1;
 	border-color: #7B9344;
@@ -135,7 +150,12 @@
 	border-width: 0 0 0 7vh;
 }
 #Peridotbutton{
+	background-color: #321414;
+	border-bottom: 3px solid #7B9344;
+}
+#Peridotbutton.active{
 	background-color: #7B9344;
+	border-bottom: 3px solid #7B9344;
 }
 #Garnet{
 	background-color: #f6e6e8;
@@ -144,7 +164,12 @@
 	border-width: 0 0 0 7vh;
 }
 #Garnetbutton{
+	background-color: #321414;
+	border-bottom: 3px solid #943543;
+}
+#Garnetbutton.active{
 	background-color: #943543;
+	border-bottom: 3px solid #943543;
 }
 #Amethyst{
 	background-color: #f4ecf2;
@@ -153,7 +178,12 @@
 	border-width: 0 0 0 7vh;
 }
 #Amethystbutton{
+	background-color: #321414;
+	border-bottom: 3px solid #824B77;
+}
+#Amethystbutton.active{
 	background-color: #824B77;
+	border-bottom: 3px solid #824B77;
 }
 #Aquamarine{
 	background-color: #e3eff4;
@@ -162,7 +192,12 @@
 	border-width: 0 0 0 7vh;
 }
 #Aquamarinebutton{
+	background-color: #321414;
+	border-bottom: 3px solid #9DC6D8;
+}
+#Aquamarinebutton.active{
 	background-color: #9DC6D8;
+	border-bottom: 3px solid #9DC6D8;
 }
 #Emerald{
 	background-color: #e6fff9;
@@ -171,7 +206,12 @@
 	border-width: 0 0 0 7vh;
 }
 #Emeraldbutton{
+	background-color: #321414;
+	border-bottom: 3px solid #009874;
+}
+#Emeraldbutton.active{
 	background-color: #009874;
+	border-bottom: 3px solid #009874;
 }
 #Topaz{
 	background-color: #fbf3ed;
@@ -180,7 +220,12 @@
 	border-width: 0 0 0 7vh;
 }
 #Topazbutton{
+	background-color: #321414;
+	border-bottom: 3px solid #D3833D;
+}
+#Topazbutton.active{
 	background-color: #D3833D;
+	border-bottom: 3px solid #D3833D;
 }
 #Sapphire{
 	background-color: #e4f5fb;
@@ -189,7 +234,12 @@
 	border-width: 0 0 0 7vh;
 }
 #Sapphirebutton{
+	background-color: #321414;
+	border-bottom: 3px solid #126180;
+}
+#Sapphirebutton.active{
 	background-color: #126180;
+	border-bottom: 3px solid #126180;
 }
 #Ruby{
 	background-color: #fddbde;
@@ -198,7 +248,12 @@
 	border-width: 0 0 0 7vh;
 }
 #Rubybutton{
+	background-color: #321414;
+	border-bottom: 3px solid #bb0a1e;
+}
+#Rubybutton.active{
 	background-color: #bb0a1e;
+	border-bottom: 3px solid #bb0a1e;
 }
 #Diamond{
 	background-color: rgba(255, 255, 255, .15);  
@@ -208,8 +263,14 @@
 	border-width: 0 0 0 7vh;
 }
 #Diamondbutton{
+	background-color: #321414;  
+ 	backdrop-filter: blur(5px);
+	border-bottom: 3px solid white;
+}
+#Diamondbutton.active{
 	background-color: rgba(255, 255, 255, .15);  
  	backdrop-filter: blur(5px);
+	border-bottom: 3px solid rgba(255, 255, 255, .15);
 }
 #Theory{
 	background-color: #fefcf9;
@@ -218,16 +279,21 @@
 	border-width: 0 0 0 7vh;
 }
 #Theorybutton{
-	background-color: #D4AF37;
+	background-color: #321414;
+	border-bottom: 3px solid #D4AF37;
 }
-	
+#Theorybutton.active{
+	background-color: #D4AF37;
+	border-bottom: 3px solid #D4AF37;
+}	
 #Indexbutton{
-	background-color: black;
+	background-color: #321414;
+	border-bottom: 3px solid #b04646;
 }
 </style>
 
 </HEAD>
-<BODY STYLE="background-color: #555D50;">
+<BODY STYLE="background-color: #321414;">
 <DIV class="sidetitle">
 	<SPAN STYLE="font-size: 10vh;">G</SPAN>&nbsp;uitar<BR />
 	<SPAN STYLE="font-size: 10vh;">E</SPAN>&nbsp;xercises<BR />
@@ -235,6 +301,7 @@
 	<SPAN STYLE="font-size: 10vh;">S</SPAN>&nbsp;cales<BR />
 	</DIV>
 <div class="tab">
+	<button class="tablinks" onclick="window.location.href='./songlist.html';" id="Indexbutton">&#x1f50d;Index</button>
 	<button class="tablinks" onclick="openLevel(event, 'Pearl')" id="defaultOpen">&#8199;1 Pearl</button>
 	<button class="tablinks" onclick="openLevel(event, 'Opal')" id="Opalbutton">&#8199;2 Opal</button>
 	<button class="tablinks" onclick="openLevel(event, 'Turquoise')"  id="Turquoisebutton">&#8199;3 Turquoise</button>
@@ -248,7 +315,7 @@
 	<button class="tablinks" onclick="openLevel(event, 'Ruby')" id="Rubybutton">11 Ruby</button>
 	<button class="tablinks" onclick="openLevel(event, 'Diamond')"  id="Diamondbutton">12 Diamond</button>
 	<button class="tablinks" onclick="openLevel(event, 'Theory')" id="Theorybutton">&#8199;&#8199; Theory</button>
-	<button class="tablinks" onclick="window.location.href='./songlist.html';" id="Indexbutton">&#x1f50d;Index</button>
+
 </div>	
 
 <DIV ID="Pearl" CLASS="tabcontent">
@@ -855,7 +922,7 @@ GEMS-TAB.github.io
 -->
 
 <DIV STYLE="position: fixed; z-index: 4; top: 1vh; right: 0">
-<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
+<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear" STYLE="color: #b04646;">&#x2699;</BUTTON>
 </DIV>
 <!-- The Modal -->
 <div id="SettingsModal" class="w3-modal">
