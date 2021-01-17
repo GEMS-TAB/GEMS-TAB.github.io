@@ -20,7 +20,8 @@ a:active {color: inherit; text-decoration: underline;}
 body {
 /*	background-color: #F1F1D4; */
 	color: #696969;
-	font-family: 'Consolas', 'Fira Code','PT Mono','Cousine','Hack', monospace; 	  
+	font-family: 'Fira Code','PT Mono','Cousine','Hack', monospace; 	  
+/*	font-family: 'Consolas', */	
 	font-size: 1.3vw;
 	font-variant-ligatures: common-ligatures;
 	}
@@ -335,8 +336,8 @@ input:checked + .slider:before {
 	font-size: 1.3vw;
 	}
 
-.Accompaniment{visibility: hidden; font-size: 1.3vw; color: black;}
-.LHabove{visibility: hidden; font-size: 1.3vw; color: #c23b22; font-style: italic;}
+	.Accompaniment{visibility: hidden; font-size: 1.3vw; color: black;}
+	.LHabove{visibility: hidden; font-size: 1.3vw; color: #c23b22; font-style: italic;}
 	.LHinline{display: none; font-size: 1.3vw; color: #c23b22; font-style: italic;}
 	.LHfiller{display: none; font-size: 1.3vw; color: inherit;}
 	.RH{visibility: hidden; font-size: 1.3vw; color: #779ecb;}
@@ -350,6 +351,8 @@ input:checked + .slider:before {
  
 	.Detail{display: none; font-size: inherit; color: inherit; font-family: inherit;}
 	.Pedagogy{display: none; font-size: 1.0vw; color: inherit; font-family: cursive; color: navy;}
+	.ToggleDisplay{display: none; font-size: 1.3vw; color: black;}
+	.ToggleVisible{display: none; font-size: 1.3vw; color: inherit;}
 
 	
 	
