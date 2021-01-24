@@ -5,15 +5,15 @@
     <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<META name="keywords" content="GEMS, guitar, exercises, melodies, scales, tab, tablature">
 	<LINK rel="stylesheet" type="text/css" href="./stylesheet.css"> 
-
+<!--
 	<meta name="google-site-verification" content="jM2B3HYwo_3AEsh7O01JUAD1_vblND-URrSru8qlE9g" />
 	<meta name="msvalidate.01" content="122A310580675420AD2FB259C2680F3F" />
 	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101258268);</script>
 	<script async src="//static.getclicky.com/js"></script>
-
+-->
 
 <!-- Clarity tracking code for https://gems-tab.github.io/ -->
-
+<!--
 <script>
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -21,7 +21,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "4sknplq6xu");
 </script>
-	
+-->	
 <style>
 /* Style the tab */
 .sidetitle {
@@ -286,10 +286,22 @@
 	background-color: #D4AF37;
 	border-bottom: 3px solid #D4AF37;
 }	
+#Index{
+	background-color: #f3ebe1;
+	border-color: #b08d57;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
 #Indexbutton{
 	background-color: #321414;
-	border-bottom: 3px solid #b04646;
+	border-bottom: 3px solid #b08d57;
+	<!-- #b04646; -->
 }
+#Indexbutton.active{
+	background-color: #b08d57;
+	border-bottom: 3px solid #b08d57;
+}	
+
 </style>
 
 </HEAD>
@@ -301,7 +313,8 @@
 	<SPAN STYLE="font-size: 10vh;">S</SPAN>&nbsp;cales<BR />
 	</DIV>
 <div class="tab">
-	<button class="tablinks" onclick="window.location.href='./songlist.html';" id="Indexbutton">&#x1f50d;Index</button>
+	<!-- <button class="tablinks" onclick="window.location.href='./songlist.html';" id="Indexbutton">&#x1f50d;Index</button> -->
+	<button class="tablinks" onclick="openLevel(event, 'Index')" id="Indexbutton">&#x1f50d;Index</button>
 	<button class="tablinks" onclick="openLevel(event, 'Pearl')" id="defaultOpen">&#8199;1 Pearl</button>
 	<button class="tablinks" onclick="openLevel(event, 'Opal')" id="Opalbutton">&#8199;2 Opal</button>
 	<button class="tablinks" onclick="openLevel(event, 'Turquoise')"  id="Turquoisebutton">&#8199;3 Turquoise</button>
@@ -697,6 +710,9 @@
 	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/12barBluesV7.html">Blues Progression</A></SPAN></LI>
 	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/ChordIntroAMajor.html">A Major Chord<SPAN CLASS="Detail">.&nbsp;Open position.</SPAN></A></SPAN></LI>
 	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/ChordIntroAMinor.html">A minor Chord<SPAN CLASS="Detail">.&nbsp;Open position.</SPAN></A></SPAN></LI>
+	<BR />
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/ChordIntroDMajor.html">D Major Chord<SPAN CLASS="Detail">.&nbsp;Open position.</SPAN></A></SPAN></LI>
+	<LI STYLE="color: #45B8AC"><SPAN STYLE="color: black"><A HREF="./Turquoise/ChordIntroEMajor.html">E Major Chord<SPAN CLASS="Detail">.&nbsp;Open position.</SPAN></A></SPAN></LI>
 	</OL>
 </div>
 
@@ -884,6 +900,14 @@
   <OL>
   <LI STYLE="color: #126180"><SPAN CLASS="NoLink">&iquest; Chromatic scale 3&times;8<SUP>va</SUP> on B</SPAN></LI>
   <BR />
+	<LI STYLE="color: #126180">
+		<SPAN STYLE="color: black">
+			<A HREF="./Sapphire/BluesScaleD.html">
+				<SPAN CLASS="Detail">Blues&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;2&times;8<SUP>va</SUP></SPAN>&nbsp;in D&nbsp;m<SPAN CLASS="Detail">inor.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=108.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
   <LI STYLE="color: #126180"><SPAN CLASS="NoLink">&iquest; Sonata<SPAN CLASS="Detail">, by Mateo Albéniz</SPAN></SPAN></LI>  
   </OL>
 </div>
@@ -893,6 +917,14 @@
   <OL>
   <LI STYLE="color: #bb0a1e"><SPAN CLASS="NoLink">&iquest; Chromatic scale 3&times;8<SUP>va</SUP> on B</SPAN></LI>
   <BR />
+	<LI STYLE="color: #bb0a1e">
+		<SPAN STYLE="color: black">
+			<A HREF="./Ruby/BluesScaleEb.html">
+				<SPAN CLASS="Detail">Blues&nbsp;</SPAN>Scale<SPAN CLASS="Detail">&nbsp;2&times;8<SUP>va</SUP></SPAN>&nbsp;in E&flat;&nbsp;m<SPAN CLASS="Detail">inor.</SPAN><SPAN CLASS="Detail">Played with sixteenth notes in 4/4 meter at MM=112.</SPAN>
+			</A>
+		</SPAN>
+	</LI>
+	<BR />
   <LI STYLE="color: #bb0a1e"><SPAN CLASS="NoLink">&iquest; Sonata<SPAN CLASS="Detail">, K 380 by Domenico Scarlatti </SPAN></SPAN></LI>  
   </OL>
 </div>
@@ -916,10 +948,18 @@
 
 <div id="Theory" class="tabcontent">
   <h3>Theory</h3>
-	<OL TYPE="1">
+	<OL TYPE="1" STYLE="color: #321414;">
 	<LI><a href="./Theory/Mnemonic.html">Mnemonic for Guitar String Names</a></LI>
 	<LI><a href="./Theory/PitchNotation.html">Pitch Notation</a></LI>
 	<LI><a href="./Theory/TimeLine.html">Time Line</a></LI>
+	</OL>
+</div>
+
+<div id="Index" class="tabcontent">
+  <H3>Index</H3>
+	<OL TYPE="1" STYLE="color: #321414;">
+	<LI><a href="./songlist.html">Songs</a></LI>
+	<LI><a href="./chordlist.html"><SPAN CLASS="Detail">Lessons Introducing</SPAN> Chords</a></LI>
 	</OL>
 </div>
 
