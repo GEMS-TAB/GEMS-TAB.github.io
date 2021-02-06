@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: gems-tab.github.io
+Token: e908b1cd5b62079a2a2b0377b5686da8620306ff7d09f11f7a6a1d4b658da30b
