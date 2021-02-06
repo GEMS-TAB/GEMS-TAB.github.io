@@ -1,3 +1,3 @@
 User-agent: * 
 Disallow: /
-Sitemap:http://gems-tab.github.io/sitemap.txt
+Sitemap:http://gems-tab.github.io/sitemap.xml
