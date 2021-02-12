@@ -412,9 +412,24 @@ input:checked + .slider:before {
 	
 	
 .dynamics {font-family: 'DM Mono', cursive;}
-}
+
 	
-	
+	.cc {
+		text-align: center;
+		font-family: monospace;
+		/*line-height:100%;*/
+		height: auto;
+		width: 33%;
+		position: relative;
+		padding: 1%;
+		margin: 0 auto;
+		background-color: #fff;
+		-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+		
+	}
+		
 @media print {
 	
 	div {page-break-inside: avoid;}
@@ -422,7 +437,7 @@ input:checked + .slider:before {
 	.Gear{display:none;}
 	.Pearl{display:none;}
 	.OpalNavBar{display:none;}
-	.TurquoiseNavBar{display:none;}
+	.TurquoiseNavBar{display: none !important;}
 	.PeridotNavBar{display:none;}
 }
 
