@@ -26,6 +26,8 @@ body {
 	font-variant-ligatures: common-ligatures;
 	}
 
+div img { max-width: 33%; padding: 6%; }
+
 	H2 {
 	color: black;
 	font-size: 1.8vw;
