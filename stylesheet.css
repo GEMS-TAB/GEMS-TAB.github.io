@@ -416,7 +416,7 @@ input:checked + .slider:before {
 	
 	.cc {
 		text-align: center;
-		font-family: monospace;
+		font-family: 'PT Mono','Cousine','Hack', monospace;
 		/*line-height:100%;*/
 		height: auto;
 		width: 33%;
