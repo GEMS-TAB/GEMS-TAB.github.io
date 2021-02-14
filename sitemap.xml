@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>http://gems-tab.github.io</loc><priority>1</priority></url>
+<url><loc>https://gems-tab.github.io/chordlist.html</loc></url>
 <url><loc>https://gems-tab.github.io/index.html</loc></url>
 <url><loc>https://gems-tab.github.io/songlist.html</loc></url>
+<url><loc>https://gems-tab.github.io/Pearl/AmazingGrace01.html</loc></url>
+<url><loc>https://gems-tab.github.io/Pearl/BluesWith5ths.html</loc></url>
 <url><loc>https://gems-tab.github.io/Pearl/Ex1.html</loc></url>
 <url><loc>https://gems-tab.github.io/Pearl/VeryBasicBlues.html</loc></url>
 <url><loc>https://gems-tab.github.io/Pearl/OpenStringChords.html</loc></url>
@@ -14,7 +17,6 @@
 <url><loc>https://gems-tab.github.io/Pearl/VeryBasicHopscotch.html</loc></url>
 <url><loc>https://gems-tab.github.io/Pearl/ScaleCMajor.html</loc></url>
 <url><loc>https://gems-tab.github.io/Pearl/OldMacDonald.html</loc></url>
-<url><loc>https://gems-tab.github.io/Pearl/BluesWith5ths.html</loc></url>
 <url><loc>https://gems-tab.github.io/Opal/ChromaticScaleOnD.html</loc></url>
 <url><loc>https://gems-tab.github.io/Opal/ScaleCMajorMM100.html</loc></url>
 <url><loc>https://gems-tab.github.io/Opal/HappyBirthday.html</loc></url>
