@@ -49,9 +49,24 @@ strong{
 .NavButtonLeft {
 	position: relative;
 	display: inline-block;
-	width: 4vw;
-	height: 1.5vw;
+	max-width: 4vw;
+	height: 4vh;
 	padding-left: 4vw;
+	}
+	
+.NavButtonMid {
+	position: relative;
+	display: inline-block;
+	max-width: 4vw;
+	height: 4vh;
+	}
+
+.NavButtonRight {
+	position: relative;
+	display: inline-block;
+	max-width: 4vw;
+	height: 4vh;
+	padding-right: 4vw;
 	}
 
 .Pearl{
