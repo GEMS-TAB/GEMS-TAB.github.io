@@ -46,6 +46,14 @@ strong{
 	color: black;
 }
 
+.NavButtonLeft {
+	position: relative;
+	display: inline-block;
+	width: 4vw;
+	height: 1.5vw;
+	padding-left: 4vw;
+	}
+
 .Pearl{
 /*	background-color: #F5DDDA; */
 	background-color: #eae0c8; 
