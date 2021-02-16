@@ -49,24 +49,23 @@ strong{
 .NavButtonLeft {
 	position: relative;
 	display: inline-block;
-	max-width: 4vw;
-	height: 4vh;
 	padding-left: 4vw;
+	max-width: 4vw;
+	max-height: 2vh;
 	}
 	
 .NavButtonMid {
 	position: relative;
 	display: inline-block;
 	max-width: 4vw;
-	height: 4vh;
+	max-height: 2vh;
 	}
 
 .NavButtonRight {
 	position: relative;
 	display: inline-block;
 	max-width: 4vw;
-	height: 4vh;
-	padding-right: 4vw;
+	max-height: 2vh;
 	}
 
 .Pearl{
@@ -295,8 +294,8 @@ strong{
 .Gear{
 	background-color: inherit;
 	float: right; 
-	margin-right: 2vw;
-	font-size:2vw;
+	margin-right: 1vw;
+	font-size:3vw;
 	border: none;
 	border-radius: 2vw;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
