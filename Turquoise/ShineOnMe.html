@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+	<TITLE>&#128142; Let Your Light Shine On Me [TAB]</TITLE>
+    <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<META name="keywords" content="blues, gospel, guitar, Let Your Light Shine One Me, song, tab, tablature">
+	<META name="description" content="Let Your Light Shine On Me.  Music score in TAB.">
+	<LINK rel="stylesheet" type="text/css" href="../stylesheet.css"> 
+</HEAD>
+<BODY CLASS="TurquoiseBody">
+<DIV CLASS="TurquoiseNavBar">
+<SPAN STYLE="float: left;">
+	<DIV CLASS="NavButtonLeft">
+		<A HREF="../index.html">
+		<svg width="3vw" height="3vh">
+			<image width="3vw" height="3vh" href="../Icons/EjectHome.svg" preserveAspectRatio="xMinYMid meet"/>
+			<title>Home</title>
+		</svg>
+		</A>
+	</DIV>
+	<DIV CLASS="NavButtonMid">
+		<A HREF="./ChromaticScaleOnA.html">
+		<svg width="3vw" height="3vh">
+			<image width="3vw" height="3vh" href="../Icons/FirstTrack.svg" preserveAspectRatio="xMinYMid meet"/>
+			<title>First piece in this level</title>		
+		</svg>
+		</A>
+	</DIV>
+	<DIV CLASS="NavButtonMid">
+		<A HREF="./MidnightSpecial.html">
+		<svg width="3vw" height="3vh">
+			<image width="3vw" height="3vh" href="../Icons/Prev.svg" preserveAspectRatio="xMinYMid meet"/>
+			<title>Previous</title>
+		</svg>
+		</A>
+	</DIV>
+	<DIV CLASS="NavButtonMid">
+		<A HREF="./AmazingGrace03.html">
+		<svg width="3vw" height="3vh">
+			<image width="3vw" height="3vh" href="../Icons/Next.svg" preserveAspectRatio="xMinYMid meet"/>
+			<title>Next</title>		
+		</svg>
+		</A>
+	</DIV>
+	<DIV CLASS="NavButtonMid">
+		<A HREF="./AmazingGrace03.html">
+		<svg width="3vw" height="3vh">
+			<image width="3vw" height="3vh" href="../Icons/LastTrack.svg" preserveAspectRatio="xMinYMid meet"/>
+			<title>Last piece in this level</title>			
+		</svg>
+		</A>
+	</DIV>
+	<DIV CLASS="NavButtonLeft" STYLE = "opacity: 0;">
+		<svg width="3vw" height="3vh">
+			<image width="3vw" height="3vh" href="../Icons/SkipBack.svg" preserveAspectRatio="xMinYMid meet"/>
+			<title>Skip back to similar</title>	
+		</svg>
+	</DIV>
+	<DIV CLASS="NavButtonRight" STYLE = "opacity: 0;">
+		<svg width="3vw" height="3vh">
+			<image width="3vw" height="3vh" href="../Icons/SkipAhead.svg" preserveAspectRatio="xMinYMid meet"/>
+			<title>Skip ahead to similar</title>	
+		</svg>
+	</DIV>
+	<DIV CLASS="NavButtonRight">
+		<SPAN CLASS="NavButtonRight">
+		<A HREF="#" onclick="window.print();return false;">
+		<svg width="3vw" height="3vh">
+			<image width="3vw" height="3vh" href="../Icons/Print.svg" preserveAspectRatio="xMinYMid meet"/>
+			<title>Print</title>	
+		</svg>
+		</A>
+	</DIV>	
+	<DIV CLASS="NavButtonLeft">
+		<A HREF="https://youtu.be/UpeIfUIyuJ8">
+		<svg width="3vw" height="3vh">
+			<image width="3vw" height="3vh" href="../Icons/youtube2.svg" preserveAspectRatio="xMinYMid meet"/>
+			<title>hek7</title>			
+		</svg>
+		</A>
+	</DIV>
+</SPAN>
+<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
+</DIV>
+<!-- The Modal -->
+<div id="SettingsModal" class="w3-modal">
+  <div class="modal-content">
+    <div class="w3-container">
+	<span onclick="document.getElementById('SettingsModal').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+<H3>Hide | Show</H3>
+<UL style="list-style-type:none;">
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showTempo()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Tempo
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showChords()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Chord Names 
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showRH()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Right Hand
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showLH()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Left Hand
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showStems()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Rhythm
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showCount()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Count
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showLyrics()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Lyrics
+	</LI>
+	<!--
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showChords()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Accompaniment 
+	</LI>
+	-->
+</UL>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script>
+	function showTempo() {
+		var x = document.getElementsByClassName("MM");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "block") {
+				x[i].style.display = "none";
+			} else {
+				x[i].style.display = "block";
+			}
+		}
+	}
+</script>
+
+<script>
+		function showRH() {
+		var y = document.getElementsByClassName("RH");
+		var j;
+		for (j = 0; j < y.length; j++) {
+			if (y[j].style.visibility === "visible") {
+				y[j].style.visibility = "hidden";
+			} else {
+				y[j].style.visibility = "visible";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showLH() {
+		var x = document.getElementsByClassName("LHabove");
+		var y = document.getElementsByClassName("LHinline");
+		var z = document.getElementsByClassName("LHfiller");
+		var i;
+		var j;
+		var k;
+		
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "visible") {
+				x[i].style.visibility = "hidden";
+			} else {
+				x[i].style.visibility = "visible";
+			}
+		}
+
+		for (j = 0; j < y.length; j++) {
+			if (y[j].style.display === "inline") {
+				y[j].style.display = "none";
+			} else {
+				y[j].style.display = "inline";
+			}
+		}
+
+
+		for (k = 0; k < z.length; k++) {
+			if (z[k].style.display === "inline") {
+				z[k].style.display = "none";
+			} else {
+				z[k].style.display = "inline";
+			}
+		}
+
+}
+</script>
+
+<script>
+	function showStems() {
+		var x = document.getElementsByClassName("stems");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "visible") {
+				x[i].style.visibility = "hidden";
+			} else {
+				x[i].style.visibility = "visible";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showCount() {
+		var x = document.getElementsByClassName("count");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "visible") {
+				x[i].style.visibility = "hidden";
+			} else {
+				x[i].style.visibility = "visible";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showLyrics() {
+		var x = document.getElementsByClassName("lyrics1");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "block") {
+				x[i].style.display = "none";
+			} else {
+				x[i].style.display = "block";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showChords() {
+		var td = document.getElementsByClassName("ToggleDisplay");
+		var tv = document.getElementsByClassName("ToggleVisible");
+		var i;
+		var j;
+		
+		for (i = 0; i < td.length; i++) {
+			if (td[i].style.display === "block") {
+				td[i].style.display = "none";
+			} else {
+				td[i].style.display = "block";
+			}
+		}
+		for (j = 0; j < tv.length; j++) {
+			if (tv[j].style.display === "inline") {
+				tv[j].style.display = "none";
+			} else {
+				tv[j].style.display = "inline";
+			}
+		}
+	}
+</script>
+<DIV style="clear: both; font-size:8vh;">&emsp;</DIV>
+<DIV STYLE="clear: both;">
+<HR>
+<H1>Let Your Light Shine On Me</H1>
+<HR>
+</DIV>
+<DIV STYLE="text-align: right;">
+Anon.<BR />
+</DIV>
+<SPAN CLASS="MM">MM = 166 BPM</SPAN><BR /><BR />
+<!-- First Phrase. Measures 1-3 -->
+<DIV STYLE="clear: left;">
+<!-- Measure 1 -->
+<SPAN STYLE="float: left;">
+<!--RH-->
+<!--LH-->
+<!--<SPAN CLASS="duo">-->&#x2007;&#x2007;&#x2007;Guitar 1<!--</SPAN>--><BR />
+<!--^-->&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;<STRONG>&#x1d110;</STRONG><BR />
+<!--#--><SPAN CLASS="measure">&#x2007;&#x2007;1</SPAN><BR />
+<!--E-->E&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--B-->B&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->G&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--D-->D&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--A-->A&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x253C;<BR />
+<!--E-->E&#x251C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+&#x2007;&#x2502;<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#124;&#x2007;&#x2007;&#x2007;&#x2519;&#x2007;&#124;&#x2007;&#x2007;&#x2007;&#x2519;&#x2007;&#124;&#x2007;&#x2007;&#x2007;&#x2519;</SPAN><BR />
+&#x2007;&#x2502;<!--3--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2576;&#x2500;3&#x2500;&#x2574;&#x2007;&#x2576;&#x2500;3&#x2500;&#x2574;&#x2007;&#x2576;&#x2500;3&#x2500;&#x2574;</SPAN><BR />
+&#x2007;&#x2502;<!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;2&#x2007;T&#x2007;L&#x2007;3&#x2007;T&#x2007;L&#x2007;4&#x2007;T&#x2007;L&#x2007;</SPAN><BR />
+<!--<SPAN CLASS="duo">-->
+&nbsp;&#x2502;<BR />
+<!--RH-->
+<!--LH-->
+&#x2007;&#x2502;&#x2007;Guitar 2<BR />
+<!--Chord-->
+	<SPAN CLASS="ToggleDisplay" STYLE="opacity: 0.5;">&#x2007;&#x2502;&#x3000;&#x2007;D<BR />
+	&#x2007;&#x2502;&#x2007;&#x3000;&#8544;
+	</SPAN>
+&nbsp;&#x2502;<BR />
+<!--E-->E&#x251C;&#x2500;<STRONG>&#xFE34;2</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--B-->B&#x251C;&#x2500;<STRONG>&#xFE34;3</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->G&#x251C;&#x2500;<STRONG>&#xFE34;2</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--D-->D&#x251C;&#x2500;<STRONG>&#xFE34;0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--A-->A&#x251C;&#x2500;<STRONG>&#xFE34;0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--D--><SPAN STYLE="outline: 0.3vw solid black;"><STRONG>D</STRONG></SPAN>&#x2514;&#x2500;<STRONG>&#xFE34;0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems"></SPAN>&#x2007;<BR />
+<!--3--><SPAN CLASS="stems"></SPAN>&#x2007;<BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;&#x2007;&#x3000;1&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;2&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;3&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;4</SPAN><BR />
+<!--</SPAN>-->
+<BR />
+</SPAN>
+<!-- Measure 2 -->
+<SPAN STYLE="float: left;">
+<!--RH-->
+<!--LH-->
+<!--duo1-->&#x2007;<BR />
+<!--^--><SPAN STYLE="opacity: 0;">&#x1d110;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">2</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--B-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--A-->&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#124;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#124;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;rest</SPAN><BR />
+<!--3-->&#x2007;<BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;2&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;3&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;4&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;</SPAN><BR />
+&#x2007;<BR />
+<!--RH-->
+<!--LH-->
+<!--duo2-->&#x2007;<BR />
+<!--Chord-->
+	<SPAN CLASS="ToggleDisplay" STYLE="opacity: 0.5;">G/D<BR />
+	&#x2007;&#8547;
+	</SPAN>
+&#x2007;<BR />
+<!--E--><STRONG>&#xFE34;3</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--B--><STRONG>&#xFE34;0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G--><STRONG>&#xFE34;0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--D--><STRONG>&#xFE34;0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--A--><STRONG>&#xFE34;2</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--D--><STRONG>&#xFE34;0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<BR />
+</SPAN><!-- Measure 3 -->
+<SPAN STYLE="float: left;">
+<!--RH-->
+<!--LH-->
+<!--duo1-->&#x2007;<BR />
+<!--^--><SPAN STYLE="opacity: 0;">&#x1d110;</SPAN><BR />
+<!--#--><SPAN CLASS="measure">3</SPAN><BR />
+<!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2556;<BR />
+<!--B-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--G-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--E-->&#x2500;&#x2500;<STRONG>5</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
+<!--R--><SPAN CLASS="stems">&#x2007;</SPAN><BR />
+<!--3--><SPAN CLASS="stems">&#x2007;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;2&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;3&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;4</SPAN><BR />
+&#x2007;<BR />
+<!--RH-->
+<!--LH-->
+<!--duo2-->&#x2007;<BR />
+<!--Chord-->
+	<SPAN CLASS="ToggleDisplay" STYLE="opacity: 0.5;">G/D<BR />
+	&#x2007;&#8547;
+	</SPAN>
+&#x2007;<BR />
+<!--E-->(3)&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
+<!--B-->(0)&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--G-->(0)&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--D-->(0)&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--A-->(2)&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--D-->(0)&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
+<BR />
+</SPAN>
+</DIV>
+<DIV CLASS="lyrics1" STYLE="clear: left;">
+<H4>Lyrics</H4>
+<P>
+Let it shine on me, let it shine on me<BR />
+Oh, let Your light from the lighthouse shine on<BR />
+Let it shine on me, let it shine on me<BR />
+Oh, let Your light from the lighthouse shine on<BR />
+</P>
+<P>
+My Lord, he's done just what he said<BR />
+Let Your light from the lighthouse shine on me<BR />
+Heal the sick and rise the dead<BR />
+Let Your light from the lighthouse shine on me<BR />
+</P>
+<P>
+Oh, let it shine on well, let it shine on<BR />
+Let Your light from the lighthouse shine on me<BR />
+Shine on oh, let it shine on<BR />
+Let Your light from the lighthouse shine on me<BR />
+</P>
+<P>
+I know I've got religion and I ain't ashamed<BR />
+Let Your light from the lighthouse shine on me<BR />
+Angels in Heaven, done wrote my name<BR />
+Let Your light from the lighthouse shine on me<BR />
+</P>
+<P>
+Oh, let it shine on well, let it shine on<BR />
+Let Your light from the lighthouse shine on me<BR />
+Shine on well, let it shine on<BR />
+Let Your light from the lighthouse shine on me<BR />
+</P>
+<P>
+Oh, let it shine on oh, let it shine on<BR />
+Let Your light from the lighthouse shine on me<BR />
+Shine on well, let shine on<BR />
+Let Your light from the lighthouse shine on me<BR />
+</P>
+<P>
+Shine on oh, let it shine on<BR />
+Let Your light from the lighthouse shine on me<BR />
+Shine on oh, let it shine on<BR />
+Let Your light shine on me<BR />
+</P>
+</DIV>
+<script language="javascript" type="text/javascript" src="../footer.txt"></script>
+</BODY>
+</HTML>
