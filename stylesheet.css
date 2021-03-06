@@ -419,6 +419,11 @@ input:checked + .slider:before {
 .MM{
 	display: none;		
 	}
+
+.BPM{
+	display: block;		
+	}
+
 .strings{
 	font-size: 1.3vw;
 	}
