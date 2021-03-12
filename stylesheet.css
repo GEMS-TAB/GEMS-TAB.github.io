@@ -22,7 +22,9 @@ body {
 	color: #696969;
 	font-family: 'Fira Code','PT Mono','Cousine','Hack', monospace; 	  
 /*	font-family: 'Consolas', */	
-	font-size: 1.3vw;
+	font-size: clamp(12px, 1.3vw, 1.3vw);
+/*	font-size: calc(12px + 1.3vw); */
+/*	font-size: 1.3vw; */
 	font-variant-ligatures: common-ligatures;
 	}
 
