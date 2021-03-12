@@ -7,15 +7,15 @@
 	<META name="keywords" content="GEMS, guitar, exercises, melodies, scales, tab, tablature">
 	<META name="description" content="Guitar exercises, melodies &amp; scales in tablature.  Organized progressively in twelve levels.">	
 	<LINK rel="stylesheet" type="text/css" href="./stylesheet.css"> 
-
+<!--
 	<meta name="google-site-verification" content="jM2B3HYwo_3AEsh7O01JUAD1_vblND-URrSru8qlE9g" />
 	<meta name="msvalidate.01" content="122A310580675420AD2FB259C2680F3F" />
 	<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101258268);</script>
 	<script async src="//static.getclicky.com/js"></script>
-
+-->
 
 <!-- Clarity tracking code for https://gems-tab.github.io/ -->
-
+<!--
 <script>
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -23,7 +23,7 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "4sknplq6xu");
 </script>
-	
+-->	
 <style>
 /* Style the tab */
 .sidetitle {
@@ -60,7 +60,7 @@
 	color: #dba5a5;
 	padding: 2vh;
 	width: 100%;
-	height: 7%;
+	height: 6.6%;
 	outline-style: none;
 	text-align: left;
 	cursor: pointer;
@@ -274,6 +274,14 @@
  	backdrop-filter: blur(5px);
 	border-bottom: 3px solid rgba(255, 255, 255, .15);
 }
+
+#Pragmatic{
+	background-color: #f3ebe1;
+	border-color: #b08d57;
+	border-style: solid;
+	border-width: 0 0 0 7vh;
+}
+
 #Theory{
 	background-color: #fefcf9;
 	border-color: #D4AF37;
@@ -331,8 +339,8 @@
 	<button class="tablinks" onclick="openLevel(event, 'Sapphire')" id="Sapphirebutton">10 Sapphire</button>
 	<button class="tablinks" onclick="openLevel(event, 'Ruby')" id="Rubybutton">11 Ruby</button>
 	<button class="tablinks" onclick="openLevel(event, 'Diamond')"  id="Diamondbutton">12 Diamond</button>
+	<button class="tablinks" onclick="openLevel(event, 'Pragmatic')" id="Indexbutton">&#8199;&#8199; Pragmatic</button>
 	<button class="tablinks" onclick="openLevel(event, 'Theory')" id="Theorybutton">&#8199;&#8199; Theory</button>
-
 </div>	
 
 <DIV ID="Pearl" CLASS="tabcontent">
@@ -570,7 +578,6 @@
 	<BR />
 	<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in A minor harmonic</SPAN></LI>
 	<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in A minor melodic</SPAN></LI>
-	<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; First Exercise on the E string<SPAN CLASS="Detail">&nbsp;by Johann Kaspar Mertz</SPAN></SPAN></LI>
 	<BR />
 	<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in E minor harmonic</SPAN></LI>
 	<LI STYLE="color: #F5DDDA"><SPAN CLASS="NoLink">&iquest; Diatonic scale 1&times;8<SUP>va</SUP> in E minor melodic</SPAN></LI>
@@ -669,6 +676,13 @@
 	<LI STYLE="color: #6ED1B4"><SPAN CLASS="NoLink">&iquest; Country Dance</SPAN></LI>
 	<LI STYLE="color: #6ED1B4"><SPAN STYLE="color: black"><A HREF="./Opal/MwanaWaNnyabo.html">Mwana wa Nnyabo</A></SPAN></LI>
 	<BR />
+	<LI STYLE="color: #6ED1B4">
+		<SPAN STYLE="color: black">
+		<A HREF="./Opal/1stExerciseOnEString.html">
+		Übungen auf der E saite Nr.1<SPAN CLASS="Detail">(First Exercise on the E string)&nbsp;by J.K. Mertz</SPAN>
+		</A>
+		</SPAN>
+		</LI>
 	<LI STYLE="color: #6ED1B4">
 		<SPAN STYLE="color: black">
 		<A HREF="./Opal/Libro1Leccion46.html">Libro 1 Leccion 46</A>
@@ -1039,10 +1053,18 @@
   </OL>
 </div>
 
+<div id="Pragmatic" class="tabcontent">
+  <h3>Pragmatic Topics</h3>
+	<OL TYPE="1" STYLE="color: #321414;">
+	<LI><a href="./Pragmatic/Mnemonic.html">Mnemonic for Guitar String Names</a></LI>
+	<BR />
+	<LI><a href="./Pragmatic/TuneWithElectricTuner.html">How to tune a guitar with an electronic tuner</a></LI>
+	</OL>
+</div>
+
 <div id="Theory" class="tabcontent">
   <h3>Theory</h3>
 	<OL TYPE="1" STYLE="color: #321414;">
-	<LI><a href="./Theory/Mnemonic.html">Mnemonic for Guitar String Names</a></LI>
 	<LI><a href="./Theory/PitchNotation.html">Pitch Notation</a></LI>
 	<LI><a href="./Theory/StaffXTab3.html">Cross Reference Chart for Pitch Notation:  Natural Notes</a></LI>
 	<LI><a href="./Theory/TimeLine.html">Time Line</a></LI>
