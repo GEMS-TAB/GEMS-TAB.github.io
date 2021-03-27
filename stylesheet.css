@@ -185,6 +185,11 @@ strong{
 	color: black;
 	}
 
+.AmethystBody{
+	background-color: #f4ecf2;
+	color: #696969;
+	}
+	
 .AmethystNavBar{
 	background-color: #824B77;
 	color: #f4ecf2;
@@ -203,6 +208,7 @@ strong{
 
 .AquamarineBody{
 	background-color: #e3eff4;
+	color: #696969;
 	}
 	
 .AquamarineNavBar{
