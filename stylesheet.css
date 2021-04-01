@@ -136,6 +136,10 @@ strong{
 	background-color: #eff9f8;
 	color: black;
 }
+.TurquoiseBody{
+	background-color: #eff9f8;
+	color: #696969;
+}
 .TurquoiseNavBar{
 	background-color: #45B8AC;
 	color: #eff9f8;
@@ -354,7 +358,7 @@ strong{
 	position:relative;
 	padding:1vw;
 	outline:0;
-	width:33vw;
+	width:45vw;
 	border-radius: 1vw;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 
@@ -453,6 +457,8 @@ input:checked + .slider:before {
 	.RH{visibility: hidden; font-size: 1.3vw; color: #779ecb;}
 	.measure{font-size: 0.9vw;}
 	.stems{visibility: hidden; color: black;}
+	.stems0{visibility: hidden; color: black;}
+	.stems1{visibility: visible; color: black;}
 	.count{visibility: hidden; font-size: 1.3vw; color: #77dd77;}
 	.lyrics0{display: none; font-size: 1.3vw; color: #303030;}
 	.lyrics1{display: block; font-size: 1.3vw; color: #303030;}
@@ -472,7 +478,7 @@ input:checked + .slider:before {
 .Attained{background-color: rgba(255,255,0,0.20); color: inherit;}
 	
 	
-.dynamics {font-family: 'DM Mono', cursive;}
+.dynamics {font-family: 'DM Mono', cursive; color: black;}
 
 	
 	.cc {
