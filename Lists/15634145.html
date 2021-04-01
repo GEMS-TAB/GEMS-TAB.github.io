@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+	<TITLE>&#128142; Partial list of songs using the Pachelbel Progression</TITLE>
+    <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<META http-equiv="content-Type" content="text/html; charset=utf-8" />
+	<META name="keywords" content="cover, guitar, list, other, Pachelbel, progression, songs">
+	<META name="description" content="Partial list of songs using the Pachelbel Progression.  Links to videos showing guitar covers.">
+	<LINK rel="stylesheet" type="text/css" href="../stylesheet.css"> 
+	<STYLE>
+	table {border-collapse: collapse; border-spacing: 0;}
+	tr:nth-child(even) {background-color: #f2f2f2;}
+	th, td {text-align: left; padding: 2px 16px 2px 16px;}
+	</STYLE>
+</HEAD>
+<BODY CLASS="Index" STYLE="font-family: serif;">
+<DIV CLASS="IndexNavBar">
+	<SPAN CLASS = "NavButtonLeft"><A HREF="../index.html">Home</A></SPAN>
+	<INPUT type="text" id="myInput" onkeyup="myFunction()" placeholder="&#x1f50d; Search for ..." title="Type in a name" CLASS="Gear">
+</DIV>
+
+<!-- Scripts -->
+<script>
+function myFunction() {
+    var input = document.getElementById("myInput");
+    var filter = input.value.toUpperCase();
+    var table = document.getElementById("myTable");
+    var tr = table.getElementsByTagName("tr");
+    for (var i = 0; i < tr.length; i++) {
+        if (tr[i].textContent.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+        } else {
+            tr[i].style.display = "none";
+        }      
+    }
+}
+</script>
+
+<DIV style="clear: both; font-size:7vh;">&emsp;</DIV>
+<DIV STYLE="clear: both;">
+<HR>
+<H1>Partial list of songs using the Pachelbel Progression<BR />I-V-vi-iii-IV-I-IV-V</H1>
+<H2>With external links to solo guitar covers</H2>
+<HR>
+</DIV>
+<table id="myTable">
+
+  <tr class="header">
+    <th></th>
+	<th>Composer(s)</th>
+    <th>Song Title</th>
+	<th>Vocal<BR />Link</th>
+	<th>Instrumental<BR />Link</th>
+	<th>Instructional<BR />Link</th>
+	<th>Genre&nbsp;<SUB>original</SUB></th>
+	<th></th>
+  </tr>
+  
+<!-- P -->
+  <tr>
+    <th>P</th>
+    <td>Johann Pachelbel</td>
+    <td>Canon in D</td>
+    <td></td>
+	<td><A HREF="https://youtu.be/jXC9tuumjiA">&#10228;</A></td>
+	<td><A HREF="https://youtu.be/KxWBJyRsCto">&#10228;</A></td>
+	<td>Baroque classical</td>
+	<td></td>
+  </tr>
+ 
+   <tr>
+    <th>P</th>
+    <td>Johann Pachelbel</td>
+    <td>Christmas Canon</td>
+    <td><A HREF="https://youtu.be/rVWfrhbiIfw">&#10228;</A></td>
+	<td><A HREF="https://youtu.be/-e7tE0nuE5Y">&#10228;</A></td>
+	<td>
+		&emsp;<A HREF="https://youtu.be/5iitUrLRFuA">&#10228;</A><BR />
+		<A HREF="https://youtu.be/cet_GknG-RA">&#10228;</A>
+	</td>
+	<td>Christmas carol</td>
+	<td>Lyrics by Paul O'Neill </td>
+  </tr>
+  
+</table>
+
+<script language="javascript" type="text/javascript" src="../footer.txt"></script>
+</BODY>
+</HTML>
