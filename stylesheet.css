@@ -450,19 +450,19 @@ input:checked + .slider:before {
 	font-size: 1.3vw;
 	}
 
-	.Accompaniment{visibility: hidden; font-size: 1.3vw; color: black;}
-	.LHabove{visibility: hidden; font-size: 1.3vw; color: #c23b22; font-style: italic;}
-	.LHinline{display: none; font-size: 1.3vw; color: #c23b22; font-style: italic;}
-	.LHfiller{display: none; font-size: 1.3vw; color: inherit;}
-	.RH{visibility: hidden; font-size: 1.3vw; color: #779ecb;}
+	.Accompaniment{visibility: hidden; color: black;}
+	.LHabove{visibility: hidden; color: #c23b22; font-style: italic;}
+	.LHinline{display: none; color: #c23b22; font-style: italic;}
+	.LHfiller{display: none; color: inherit;}
+	.RH{visibility: hidden; color: #779ecb;}
 	.measure{font-size: 0.9vw;}
 	.stems{visibility: hidden; color: black;}
 	.stems0{visibility: hidden; color: black;}
 	.stems1{visibility: visible; color: black;}
-	.count{visibility: hidden; font-size: 1.3vw; color: #77dd77;}
-	.lyrics0{display: none; font-size: 1.3vw; color: #303030;}
-	.lyrics1{display: block; font-size: 1.3vw; color: #303030;}
-	.lyrics2{font-size: 1.3vw; color: #303030;}
+	.count{visibility: hidden; color: #77dd77;}
+	.lyrics0{display: none; color: #303030;}
+	.lyrics1{display: block; color: #303030;}
+	.lyrics2{color: #303030;}
 	.duo{display: none;}
 	.DuoInline{display: none;}
  
