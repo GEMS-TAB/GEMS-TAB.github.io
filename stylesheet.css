@@ -51,6 +51,7 @@ strong{
 .NavButtonLeft {
 	position: relative;
 	display: inline-block;
+	margin-top: 1vh;
 	margin-left: 3vw;
 	padding: 0.5vh 1vw 0.5vh 1vw; /* top right bottom left; */
 	color: inherit;
@@ -63,6 +64,7 @@ strong{
 .NavButtonMid {
 	position: relative;
 	display: inline-block;
+	margin-top: 1vh;
 	padding: 0.5vh 1vw 0.5vh 1vw; /* top right bottom left; */
 	color: inherit;
 	background-color: inherit;
@@ -74,6 +76,7 @@ strong{
 .NavButtonRight {
 	position: relative;
 	display: inline-block;
+	margin-top: 1vh;
 	margin-right: 3vw;
 	padding: 0.5vh 1vw 0.5vh 1vw; /* top right bottom left; */
 	color: inherit;
