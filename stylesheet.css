@@ -455,7 +455,7 @@ input:checked + .slider:before {
 	.LHinline{display: none; color: #c23b22; font-style: italic;}
 	.LHfiller{display: none; color: inherit;}
 	.RH{visibility: hidden; color: #779ecb;}
-	.measure{font-size: 0.9vw;}
+	.measure{font-size: x-small;}
 	.stems{visibility: hidden; color: black;}
 	.stems0{visibility: hidden; color: black;}
 	.stems1{visibility: visible; color: black;}
