@@ -15,8 +15,8 @@
 	<SPAN CLASS = "NavButtonMid"><A HREF="../Pearl/AmazingGrace01.html">Prev</A></SPAN>
 	<SPAN CLASS = "NavButtonMid"><A HREF="./ScaleCMajorMM100.html">Next</A></SPAN> 
 	<SPAN CLASS = "NavButtonMid"><A HREF="./AmazingGrace02.html">Last</A></SPAN>
-	<!-- <SPAN CLASS = "NavButtonLeft  STYLE="opacity:0;"">Easier</SPAN> -->
-	<SPAN CLASS = "NavButtonLeft"><A HREF="../Turquoise/ChromaticScaleOnA.html">Harder</A></SPAN>
+	<SPAN CLASS = "NavButtonLeft" STYLE="opacity:0;">Easier</SPAN>
+	<SPAN CLASS = "NavButtonMid"><A HREF="../Turquoise/ChromaticScaleOnA.html">Harder</A></SPAN>
 	<!-- <SPAN CLASS = "NavButtonLeft" STYLE="opacity:0;">YouTube</SPAN> -->
 	<SPAN CLASS = "NavButtonLeft"><A HREF="#" onclick="window.print();return false;">Print</A></SPAN>
 </SPAN>
@@ -32,7 +32,7 @@
 <UL style="list-style-type:none;">
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
-		<input type="checkbox" onclick="showTempo()">
+		<input type="checkbox" checked onclick="showTempo()">
 		<span class="slider round"></span>
 		</label>
 		&emsp;Tempo
@@ -42,7 +42,7 @@
 		<input type="checkbox" onclick="showRH()">
 		<span class="slider round"></span>
 		</label>
-		&emsp;Right Hand
+		&emsp;Plectrum Technique
 	</LI>
 	<!--
 	<LI STYLE="margin: 1vh 0;">
@@ -94,10 +94,10 @@
 		var x = document.getElementsByClassName("BPM");
 		var i;
 		for (i = 0; i < x.length; i++) {
-			if (x[i].style.display === "block") {
-				x[i].style.display = "none";
-			} else {
+			if (x[i].style.display === "none") {
 				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
 			}
 		}
 	}
@@ -184,7 +184,7 @@
 
 <script>
 	function showLyrics() {
-		var x = document.getElementsByClassName("lyrics1");
+		var x = document.getElementsByClassName("lyrics0");
 		var i;
 		for (i = 0; i < x.length; i++) {
 			if (x[i].style.display === "block") {
@@ -346,7 +346,7 @@
 </DIV>
 
 
-<DIV CLASS="lyrics1" STYLE="clear: left;">
+<DIV CLASS="lyrics0" STYLE="clear: left;">
 <H4>Solfège</H4>
 <P>
 <TABLE STYLE="border-collapse: collapse;">
