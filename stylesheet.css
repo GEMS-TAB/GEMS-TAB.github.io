@@ -506,7 +506,7 @@ input:checked + .slider:before {
 		font-weight: bold;
 		line-height:100%;
 		height: auto;
-		width: 66%;
+		width: 83%;
 		position: relative;
 		padding: 1%;
 		margin: 0 auto;
