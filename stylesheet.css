@@ -489,7 +489,7 @@ input:checked + .slider:before {
 		font-family: 'PT Mono','Cousine','Hack', monospace;
 		line-height:100%;
 		height: auto;
-		width: 33%;
+		width: 45%;
 		position: relative;
 		padding: 1%;
 		margin: 0 auto;
