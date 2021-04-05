@@ -4,20 +4,22 @@
 	<TITLE>&#128142; Chromatic Scale on A [TAB]</TITLE>
     <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<META name="keywords" content="A, chromatic, guitar, scale, tab, tablature">
+	<META name="description" content="Chromatic Scale on A.  Music score in guitar tablature.">
 	<LINK rel="stylesheet" type="text/css" href="../stylesheet.css"> 
 </HEAD>
-<BODY CLASS="Turquoise">
+<BODY CLASS="TurquoiseBody">
 <DIV CLASS="TurquoiseNavBar">
 <SPAN STYLE="float: left;">
-	<SPAN CLASS="NavButtonLeft"><A HREF="../index.html"><img src="../Icons/EjectHome.svg"></A></SPAN>
-	&emsp;
-	<A HREF="../Pearl/BluesWith5ths.html">&lsaquo;</A>
-	&emsp;
-	<A HREF="./ScaleCMajorMM100.html">&rsaquo;</A>
-&emsp;
-<A HREF="#" onclick="window.print();return false;">&#x2761;</A>
+	<SPAN CLASS = "NavButtonLeft"><A HREF="../index.html">Home</A></SPAN>
+	<SPAN CLASS = "NavButtonMid" STYLE="opacity:0;">First</SPAN>
+	<SPAN CLASS = "NavButtonMid"><A HREF="../Opal/AmazingGrace02.html">Prev</A></SPAN>
+	<SPAN CLASS = "NavButtonMid"><A HREF="./ChordIntroEMajor.html">Next</A></SPAN> 
+	<SPAN CLASS = "NavButtonMid"><A HREF="./AmazingGrace03.html">Last</A></SPAN>
+	<SPAN CLASS = "NavButtonLeft"><A HREF="../Opal/ChromaticScaleOnD.html">Easier</A></SPAN>
+	<SPAN CLASS = "NavButtonMid"><A HREF="../Turquoise/ChromaticScaleOnA.html">Harder</A></SPAN>
+	<!-- <SPAN CLASS = "NavButtonLeft" STYLE="opacity:0;">YouTube</SPAN> -->
+	<SPAN CLASS = "NavButtonLeft"><A HREF="#" onclick="window.print();return false;">Print</A></SPAN>
 </SPAN>
-
 <BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
 </DIV>
 <!-- The Modal -->
@@ -30,7 +32,7 @@
 <UL style="list-style-type:none;">
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
-		<input type="checkbox" onclick="showTempo()">
+		<input type="checkbox" checked onclick="showTempo()">
 		<span class="slider round"></span>
 		</label>
 		&emsp;Tempo
@@ -40,7 +42,7 @@
 		<input type="checkbox" onclick="showRH()">
 		<span class="slider round"></span>
 		</label>
-		&emsp;Right Hand
+		&emsp;Plectrum Technique
 	</LI>
 	<!--
 	<LI STYLE="margin: 1vh 0;">
@@ -89,13 +91,13 @@
 <!-- Scripts -->
 <script>
 	function showTempo() {
-		var x = document.getElementsByClassName("MM");
+		var x = document.getElementsByClassName("BPM");
 		var i;
 		for (i = 0; i < x.length; i++) {
-			if (x[i].style.display === "block") {
-				x[i].style.display = "none";
-			} else {
+			if (x[i].style.display === "none") {
 				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
 			}
 		}
 	}
@@ -182,7 +184,7 @@
 
 <script>
 	function showLyrics() {
-		var x = document.getElementsByClassName("lyrics1");
+		var x = document.getElementsByClassName("lyrics0");
 		var i;
 		for (i = 0; i < x.length; i++) {
 			if (x[i].style.display === "block") {
@@ -208,12 +210,14 @@
 	}
 </script>
 	
-<DIV style="clear: both; font-size:3vw;">&emsp;</DIV>
+<DIV style="clear: both; font-size:7vh;">&emsp;</DIV>
 <DIV STYLE="clear: both;">
 <HR>
 <H1>Chromatic Scale on A</H1>
 <HR>
-<SPAN CLASS="MM">MM = 120</SPAN><BR /><BR />
+</DIV>
+<DIV CLASS="BPM">
+MM = 120 BPM<BR /><BR />
 </DIV>
 <!-- First Phrase.  Measures 1-4 -->
 <DIV STYLE="clear: left;">
@@ -269,7 +273,7 @@
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>4</STRONG>&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#x2577;</SPAN><BR />
+<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&#x2007;&#x2007;3&#x2007;&#x2007;&#x2007;4</SPAN><BR />
 <BR />
 </SPAN>
@@ -336,7 +340,7 @@
 </DIV>
 
 
-<DIV CLASS="lyrics1" STYLE="clear: left;">
+<DIV CLASS="lyrics0" STYLE="clear: left;">
 <H4>Solfège</H4>
 <P>
 <TABLE STYLE="border-collapse: collapse;">
