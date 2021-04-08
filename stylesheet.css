@@ -454,6 +454,7 @@ input:checked + .slider:before {
 	}
 
 	.Accompaniment{visibility: hidden; color: black;}
+	.Accompaniment1{visibility: visible; color: black;}
 	.LHabove{visibility: hidden; color: #c23b22; font-style: italic;}
 	.LHinline{display: none; color: #c23b22; font-style: italic;}
 	.LHfiller{display: none; color: inherit;}
