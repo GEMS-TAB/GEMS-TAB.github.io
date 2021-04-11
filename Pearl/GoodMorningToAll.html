@@ -12,7 +12,7 @@
 <SPAN STYLE="float: left;">
 	<SPAN CLASS = "NavButtonLeft"><A HREF="../index.html">Home</A></SPAN>
 	<SPAN CLASS = "NavButtonMid"><A HREF="./Ex1.html">First</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./RoyalRoadProgression.html">Prev</A></SPAN>
+	<SPAN CLASS = "NavButtonMid"><A HREF="./JingleBellsChorus.html">Prev</A></SPAN>
 	<SPAN CLASS = "NavButtonMid"><A HREF="./ByeBabyBunting.html">Next</A></SPAN>
 	<SPAN CLASS = "NavButtonMid"><A HREF="./AmazingGrace01.html">Last</A></SPAN>
 	<!-- <SPAN CLASS = "NavButtonLeft"><A HREF="">Easier</A></SPAN> -->
@@ -67,7 +67,7 @@
 	</LI>
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
-		<input type="checkbox" onclick="showLyrics()">
+		<input type="checkbox" checked onclick="showLyrics()">
 		<span class="slider round"></span>
 		</label>
 		&emsp;Lyrics
@@ -176,16 +176,16 @@
 		var x = document.getElementsByClassName("lyrics1");
 		var i;
 		for (i = 0; i < x.length; i++) {
-			if (x[i].style.display === "block") {
-				x[i].style.display = "none";
-			} else {
+			if (x[i].style.display === "none") {
 				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
 			}
 		}
 	}
 </script>
 	
-<DIV style="clear: both; font-size:7vh;">&emsp;</DIV>
+<DIV style="clear: both; font-size:9vh;">&emsp;</DIV>
 <DIV STYLE="clear: both;">
 <HR>
 	<H1 STYLE="display: inline-block; float: left;">Good Morning to All</H1>
