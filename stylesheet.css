@@ -86,6 +86,11 @@ strong{
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	}
 
+.Shim {
+	clear: both; 
+	font-size:9vh;
+	}
+
 .Pearl{
 /*	background-color: #F5DDDA; */
 	background-color: #eae0c8; 
@@ -550,14 +555,16 @@ input:checked + .slider:before {
 @media print {
 	
 	div {page-break-inside: avoid; !important;}
+	.Gear{display:none;}
 	.NavButtonLeft{display:none;}
 	.NavButtonMid{display:none;}
 	.NavButtonRight{display:none;}
-	.Gear{display:none;}
-	.Pearl{display:none;}
 	.OpalNavBar{display:none;}
-	.TurquoiseNavBar{display: none !important;}
+	.Pearl{display:none;}
 	.PeridotNavBar{display:none;}
+	.Shim{display:none;}
+	.TurquoiseNavBar{display: none !important;}
+
 }
 
 
