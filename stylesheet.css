@@ -6,7 +6,7 @@
 @import url(https://db.onlinewebfonts.com/c/49b13300202f25c085c731d216fab421?family=PT+Mono&display=swap);
 */
 @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Marck+Script&family=Cousine&family=DM+Mono:ital,wght@1,500&family=Fira+Code&family=PT+Mono&family=Syne+Mono&display=swap&family=Cardo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Clicker+Script&family=Marck+Script&family=Cousine&family=DM+Mono:ital,wght@1,500&family=Fira+Code&family=PT+Mono&family=Syne+Mono&display=swap&family=Cardo&display=swap');
 
 a:link {
 	color: inherit;
@@ -20,7 +20,7 @@ a:active {color: inherit; text-decoration: underline;}
 body {
 /*	background-color: #F1F1D4; */
 	color: #696969;
-	font-family: 'Fira Code','PT Mono','Cousine','Hack', monospace; 	  
+	font-family: 'Overpass Mono','Fira Code','PT Mono','Cousine','Hack', monospace; 	  
 /*	font-family: 'Consolas', */	
 	font-size: clamp(12px, 1.3vw, 1.3vw);
 /*	font-size: calc(12px + 1.3vw); */
