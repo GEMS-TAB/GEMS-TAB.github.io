@@ -22,7 +22,7 @@
 	<SPAN CLASS = "NavButtonMid"><A HREF="https://youtu.be/fe6Ug2F-wGY">YouTube</A></SPAN>
 	<SPAN CLASS = "NavButtonLeft"><A HREF="#" onclick="window.print();return false;">Print</A></SPAN>
 </SPAN>
-<!-- <BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON> -->
+<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
 <SPAN CLASS = "Gear"><A HREF="https://imslp.org/wiki/Special:ReverseLookup/116192">&#x1f3bc;</A></SPAN>
 </DIV>
 <!-- The Modal -->
@@ -35,7 +35,14 @@
 <UL style="list-style-type:none;">
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
-		<input type="checkbox" onclick="showTempo()">
+		<input type="checkbox" checked onclick="showKey()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Key Signature
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showTempo()">
 		<span class="slider round"></span>
 		</label>
 		&emsp;Tempo
@@ -45,8 +52,9 @@
 		<input type="checkbox" onclick="showRH()">
 		<span class="slider round"></span>
 		</label>
-		&emsp;Right Hand
+		&emsp;Plectrum Technique
 	</LI>
+	<!--
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
 		<input type="checkbox" onclick="showLH()">
@@ -54,9 +62,10 @@
 		</label>
 		&emsp;Left Hand
 	</LI>
+	-->
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
-		<input type="checkbox" onclick="showStems()">
+		<input type="checkbox" checked onclick="showStems()">
 		<span class="slider round"></span>
 		</label>
 		&emsp;Rhythm
@@ -68,13 +77,6 @@
 		</label>
 		&emsp;Count
 	</LI>
-	<LI STYLE="margin: 1vh 0;">
-		<label class="switch">
-		<input type="checkbox" onclick="showLyrics()">
-		<span class="slider round"></span>
-		</label>
-		&emsp;Lyrics
-	</LI>
 </UL>
     </div>
   </div>
@@ -82,14 +84,28 @@
 
 <!-- Scripts -->
 <script>
-	function showTempo() {
-		var x = document.getElementsByClassName("MM");
+	function showKey() {
+		var x = document.getElementsByClassName("key1");
 		var i;
 		for (i = 0; i < x.length; i++) {
-			if (x[i].style.display === "block") {
-				x[i].style.display = "none";
-			} else {
+			if (x[i].style.display === "none") {
 				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showTempo() {
+		var x = document.getElementsByClassName("BPM");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "none") {
+				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
 			}
 		}
 	}
@@ -173,20 +189,6 @@
 		}
 	}
 </script>
-
-<script>
-	function showLyrics() {
-		var x = document.getElementsByClassName("lyrics1");
-		var i;
-		for (i = 0; i < x.length; i++) {
-			if (x[i].style.display === "block") {
-				x[i].style.display = "none";
-			} else {
-				x[i].style.display = "block";
-			}
-		}
-	}
-</script>
 	
 <DIV CLASS="Shim">&emsp;</DIV>
 <DIV STYLE="clear: both;">
@@ -200,11 +202,20 @@
 	</DIV>
 <HR STYLE="clear: both;">
 </DIV>
+<DIV CLASS="key1">
+	<P>
+	<table>
+	<tr><td>Key:&#x2007;&#x2007;</td><td>A Major</td></tr>
+	<tr><td></td><td><SPAN LANG="it" STYLE="font-style: italic;">La maggiore</SPAN></td></tr>
+	</table>
+	</P>
+</DIV>
 <DIV CLASS="BPM">
 	<P>
-	<SPAN CLASS="dynamics" STYLE="color:inherit">Allegro maestoso</SPAN>
-	<BR />
-	MM = 120 BPM
+	<table>
+	<tr><td>Tempo:</td><td>MM = 120 BPM</td></tr>
+	<tr><td></td><td><SPAN CLASS="dynamics" STYLE="color:inherit" LANG="it">Allegro maestoso</SPAN></td></tr>
+	</table>
 	</P>
 </DIV>
 <DIV STYLE="clear: left;">
@@ -230,7 +241,7 @@
 <!-- Last Measure 263-->
 <SPAN STYLE="float: left;">
 <!--G2-->
-<!--RH--><SPAN CLASS="RH">&#x2007;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
 <!--LH--><SPAN CLASS="LHabove">&#x2007;</SPAN><BR />
 <!--^-->
 <!--#--><SPAN CLASS="measure">263</SPAN><BR />
@@ -238,10 +249,10 @@
 <!--B-->B&#x2500;&#x2500;<STRONG>5</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
 <!--G-->G&#x2500;&#x2500;<STRONG>6</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
 <!--D-->D&#x2500;&#x2500;<STRONG>7</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
-<!--A-->A&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--A-->A&#x2500;&#x2500;<STRONG>O</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
 <!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
 <!--R--><SPAN CLASS="stems">&#x2007;</SPAN><BR />
-<!--C--><SPAN CLASS="count">&#x2007;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;2&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;3&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;4</SPAN><BR />
 <BR />
 </SPAN>
 </DIV>
