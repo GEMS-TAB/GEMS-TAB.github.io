@@ -287,6 +287,10 @@ strong{
 	color: black;
 	}
 	
+.RubyBody{
+	background-color: #fddbde;
+	}
+
 .RubyNavBar{
 	background-color: #bb0a1e;
 	color: #fddbde;
@@ -473,6 +477,8 @@ input:checked + .slider:before {
 	.stems0{visibility: hidden; color: black;}
 	.stems1{visibility: visible; color: black;}
 	.count{visibility: hidden; color: #77dd77;}
+	.key0{display: none;}
+	.key1{display: block;}
 	.lyrics0{display: none; color: #303030;}
 	.lyrics1{display: block; color: #303030;}
 	.lyrics2{color: #303030;}
