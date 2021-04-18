@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+	<TITLE>&#128142; Prelude to Cello Suite No. 1 [TAB]</TITLE>
+    <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<META http-equiv="content-Type" content="text/html; charset=utf-8" />
+	<META name="keywords" content="Prelude to Cello Suite No. 1, BWV1007, guitar, score, tab, tablature, Bach">
+	<META name="description" content="Prelude to Cello Suite No. 1, by Johann Sebastian Bach.  Music score in guitar tablature.">
+	<LINK rel="stylesheet" type="text/css" href="../stylesheet.css"> 
+</HEAD>
+<BODY CLASS="TopazBody">
+<DIV CLASS="TopazNavBar">
+<SPAN STYLE="float: left;">
+	<SPAN CLASS = "NavButtonLeft"><A HREF="../index.html">Home</A></SPAN>
+	<SPAN CLASS = "NavButtonMid" STYLE="opacity:0;">First</SPAN>
+	<SPAN CLASS = "NavButtonMid"><A HREF="./BluesScaleDb.html">Prev</A></SPAN>
+	<SPAN CLASS = "NavButtonMid" STYLE="opacity:0;">Next</SPAN>
+	<SPAN CLASS = "NavButtonMid" STYLE="opacity:0;">Last</SPAN>
+	<!-- <SPAN CLASS = "NavButtonLeft  STYLE="opacity:0;"">Easier</SPAN> -->
+	<!-- <SPAN CLASS = "NavButtonMid"  STYLE="opacity:0;">Harder</SPAN> -->
+	<SPAN CLASS = "NavButtonLeft"><A HREF="https://youtu.be/C5IHqqUZEYk">YouTube</A></SPAN>
+	<SPAN CLASS = "NavButtonMid"><A HREF="https://youtu.be/fbQeF2IBW0E">YouTube</A></SPAN>
+	<SPAN CLASS = "NavButtonMid"><A HREF="https://youtu.be/Nu_vvwCMdUA">YouTube</A></SPAN>
+	<SPAN CLASS = "NavButtonLeft"><A HREF="#" onclick="window.print();return false;">Print</A></SPAN>
+</SPAN>
+<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
+<SPAN CLASS = "Gear"><A HREF="https://www.thisisclassicalguitar.com/wp-content/uploads/2018/05/Bach-BWV1007-Prelude-Unfingered.pdf#">&#x1f3bc;</A></SPAN>
+</DIV>
+<!-- The Modal -->
+<div id="SettingsModal" class="w3-modal">
+  <div class="modal-content">
+    <div class="w3-container">
+	<span onclick="document.getElementById('SettingsModal').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span>
+<H3>Hide | Show</H3>
+<UL style="list-style-type:none;">
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showKey()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Key Signature
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showTempo()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Tempo
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showRH()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Plectrum Technique
+	</LI>
+	<!--
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showLH()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Left Hand
+	</LI>
+	-->
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showStems()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Rhythm
+	</LI>
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" onclick="showCount()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Count
+	</LI>
+</UL>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script>
+	function showKey() {
+		var x = document.getElementsByClassName("key1");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "none") {
+				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showTempo() {
+		var x = document.getElementsByClassName("BPM");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "none") {
+				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
+			}
+		}
+	}
+</script>
+
+<script>
+		function showRH() {
+		var y = document.getElementsByClassName("RH");
+		var j;
+		for (j = 0; j < y.length; j++) {
+			if (y[j].style.visibility === "visible") {
+				y[j].style.visibility = "hidden";
+			} else {
+				y[j].style.visibility = "visible";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showLH() {
+		var x = document.getElementsByClassName("LHabove");
+		var y = document.getElementsByClassName("LHinline");
+		var z = document.getElementsByClassName("LHfiller");
+		var i;
+		var j;
+		var k;
+		
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "visible") {
+				x[i].style.visibility = "hidden";
+			} else {
+				x[i].style.visibility = "visible";
+			}
+		}
+
+		for (j = 0; j < y.length; j++) {
+			if (y[j].style.display === "inline") {
+				y[j].style.display = "none";
+			} else {
+				y[j].style.display = "inline";
+			}
+		}
+
+
+		for (k = 0; k < z.length; k++) {
+			if (z[k].style.display === "inline") {
+				z[k].style.display = "none";
+			} else {
+				z[k].style.display = "inline";
+			}
+		}
+
+}
+</script>
+
+<script>
+	function showStems() {
+		var x = document.getElementsByClassName("stems");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "visible") {
+				x[i].style.visibility = "hidden";
+			} else {
+				x[i].style.visibility = "visible";
+			}
+		}
+	}
+</script>
+
+<script>
+	function showCount() {
+		var x = document.getElementsByClassName("count");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.visibility === "visible") {
+				x[i].style.visibility = "hidden";
+			} else {
+				x[i].style.visibility = "visible";
+			}
+		}
+	}
+</script>
+	
+<DIV CLASS="Shim">&emsp;</DIV>
+<DIV STYLE="clear: both;">
+<HR>
+<SPAN LANG="it" STYLE="font-style: italic;">
+<H1  STYLE="display: inline-block; float: left;">Prelude to Cello Suite No. 1</H1>
+</SPAN>
+<SPAN STYLE="display: inline-block; float: left; clear: left; color: inherit; font-family: 'Special Elite';">BWV1007</SPAN>
+	<DIV STYLE="display: inline-block; float: right; text-align: right;">
+		Johann Sebastian Bach
+	</DIV>
+<HR STYLE="clear: both;">
+</DIV>
+<H2 STYLE="color: inherit; font-weight: normal;">transcribed for guitar</H2>
+<DIV CLASS="key1">
+	<P>
+	<table>
+	<tr><td>Key:&#x2007;&#x2007;</td><td>D Major</td></tr>
+	<tr><td></td><td><SPAN LANG="de" STYLE="font-style: italic;">D-Dur</SPAN></td></tr>
+	</table>
+	</P>
+</DIV>
+<DIV CLASS="BPM">
+	<P>
+	<table>
+	<tr><td>Tempo:</td><td>MM = 76 BPM</td></tr>
+	<tr></tr>
+	</table>
+	</P>
+</DIV>
+<DIV STYLE="clear: left;">
+<!-- Measure 1-41 -->
+<SPAN STYLE="float: left;">
+<!--G2-->
+<!--RH-->
+<!--LH-->
+<!--#--><SPAN CLASS="measure">&#x2007;1 - 41</SPAN><BR />
+<!--^--><SPAN STYLE="opacity: 1;">&#x2007;&#x2007;&#x2007;&bull;&#x2007;&#x2007;&#x2007;&bull;&#x2007;&#x2007;&#x2007;&bull;</SPAN><BR />
+<!--E-->
+<!--B-->
+<!--G-->
+<!--D-->
+<!--A-->
+<!--E-->
+<!--R-->
+<!--C-->
+<BR />
+</SPAN>
+</DIV>
+<DIV STYLE="clear: left;">
+<!-- Last Measure 42-->
+<SPAN STYLE="float: left;">
+<!--G2-->
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
+<!--LH--><SPAN CLASS="LHabove">&#x2007;</SPAN><BR />
+<!--^--><SPAN>&#x2007;&#x2007;&#x2007;<STRONG>&#x1d110;</STRONG></SPAN><BR />
+<!--#--><SPAN CLASS="measure">&emsp;42</SPAN><BR />
+<!--E-->E&#x2500;<STRONG>1O</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2556;<BR />
+<!--B-->B&#x2500;&#x2500;<STRONG>7</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--G-->G&#x2500;&#x2500;<STRONG>7</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--D-->D&#x2500;&#x2500;<STRONG>O</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--A-->A&#x2500;&#x2500;<STRONG>O</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
+<!--D--><SPAN STYLE="outline: 0.3vw solid black;"><STRONG>D</STRONG></SPAN>&#x2500;&#x2500;<STRONG>O</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
+<!--R--><SPAN CLASS="stems">&#x2007;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&#x2007;&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;2&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;3&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;4</SPAN><BR />
+<BR />
+</SPAN>
+</DIV>
+<script language="javascript" type="text/javascript" src="../footer.txt"></script>
+</BODY>
+</HTML>
