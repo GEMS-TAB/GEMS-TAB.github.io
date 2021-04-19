@@ -6,7 +6,7 @@
 @import url(https://db.onlinewebfonts.com/c/49b13300202f25c085c731d216fab421?family=PT+Mono&display=swap);
 */
 @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
-@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Clicker+Script&family=Marck+Script&family=Cousine&family=DM+Mono:ital,wght@1,500&family=Fira+Code&family=PT+Mono&family=Syne+Mono&display=swap&family=Cardo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Clicker+Script&family=Marck+Script&family=Cousine&family=DM+Mono:ital,wght@1,500&family=Fira+Code&family=PT+Mono&family=Syne+Mono&display=swap&family=Fredericka+the+Great&family=Special+Elite&family=Cardo&display=swap');
 
 a:link {
 	color: inherit;
@@ -180,6 +180,10 @@ strong{
 	color: black;
 	}
 
+.GarnetBody{
+	background-color: #f6e6e8;
+	}
+	
 .GarnetNavBar{
 	background-color: #943543;
 	color: #f6e6e8;
@@ -253,6 +257,10 @@ strong{
 .Topaz{
 	background-color: #fbf3ed;
 	color: black;
+	}
+
+.TopazBody{
+	background-color: #fbf3ed;
 	}
 
 .TopazNavBar{
