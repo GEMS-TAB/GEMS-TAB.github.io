@@ -20,7 +20,7 @@ a:active {color: inherit; text-decoration: underline;}
 body {
 /*	background-color: #F1F1D4; */
 	color: #696969;
-	font-family: 'Overpass Mono','Fira Code','PT Mono','Cousine','Hack', monospace; 	  
+	font-family: 'American Typewriter','Overpass Mono','Fira Code','PT Mono','Cousine','Hack', monospace; 	  
 /*	font-family: 'Consolas', */	
 	font-size: clamp(12px, 1.3vw, 1.3vw);
 /*	font-size: calc(12px + 1.3vw); */
