@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 542.4688 773.57857"
+   width="542.46881"
+   height="773.57855"
+   version="1.1"
+   id="svg979"
+   sodipodi:docname="GoverB(1finger).svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15, custom)">
+  <metadata
+     id="metadata983">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview981"
+     showgrid="false"
+     inkscape:zoom="0.7563342"
+     inkscape:cx="300.29936"
+     inkscape:cy="301.95183"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g975" />
+  <defs
+     id="defs931">
+    <marker
+       id="DistanceX"
+       orient="auto"
+       refX="0"
+       refY="0"
+       style="overflow:visible">
+      <path
+         d="M 3,-3 -3,3 M 0,-5 V 5"
+         style="stroke:#000000;stroke-width:0.5"
+         id="path919" />
+    </marker>
+    <pattern
+       id="Hatch"
+       patternUnits="userSpaceOnUse"
+       width="8"
+       height="8"
+       x="0"
+       y="0">
+      <path
+         d="M8 4 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path922" />
+      <path
+         d="M6 2 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path924" />
+      <path
+         d="M4 0 l-4,4"
+         stroke="#000000"
+         stroke-width="0.25"
+         linecap="square"
+         id="path926" />
+    </pattern>
+    <symbol
+       id="$MODEL_SPACE" />
+    <symbol
+       id="$PAPER_SPACE" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="0"
+     id="g975"
+     transform="translate(-544.76561,-975.92242)">
+    <path
+       d="m 576,1092.8557 v 650.976"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path933" />
+    <path
+       d="m 576,1122.5197 h 480"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path935" />
+    <path
+       d="m 576,1277.8477 h 480"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path937" />
+    <path
+       d="m 576,1433.1757 h 480"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path939" />
+    <path
+       d="m 576,1588.5037 h 480"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path941" />
+    <path
+       d="m 576,1743.8317 h 480"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path943" />
+    <path
+       d="m 576,1092.8557 h 480"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path945" />
+    <path
+       d="m 720,1355.5117 a 48,48 0 1 0 -96,0 48,48 0 1 0 96,0 z"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path947" />
+    <path
+       d="m 864,1122.5197 v 621.312"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path949" />
+    <path
+       d="m 768,1122.5197 v 621.312"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path951" />
+    <path
+       d="m 672,1122.5197 v 184.992"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path953" />
+    <path
+       d="m 897.6,1015.1917 a 33.6,33.6 0 1 0 -67.2,0 33.6,33.6 0 1 0 67.2,0 z"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path955" />
+    <path
+       d="m 960,1122.5197 v 621.312"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path957" />
+    <path
+       d="m 801.6,1015.1917 a 33.6,33.6 0 1 0 -67.2,0 33.6,33.6 0 1 0 67.2,0 z"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path959" />
+    <path
+       d="m 548.7744,987.96609 54.4512,54.45121"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path961" />
+    <path
+       d="m 548.7744,1042.4173 54.4512,-54.45121"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path963" />
+    <path
+       d="m 672,1403.5117 v 340.32"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path965" />
+    <path
+       d="m 1056,1092.8557 v 650.976"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path967" />
+    <path
+       d="m 993.6,1015.1917 a 33.6,33.6 0 1 0 -67.2,0 33.6,33.6 0 1 0 67.2,0 z"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path969" />
+    <path
+       d="m 1028.7744,987.96609 54.4512,54.45121"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path971" />
+    <path
+       d="m 1028.7744,1042.4173 54.4512,-54.45121"
+       style="fill:none;stroke:#000000;stroke-width:11.3386;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path973" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:14.9915;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 113.21275,418.6827 c -9.45623,-3.19644 -21.89558,-15.77002 -25.070879,-25.34142 -4.830841,-14.56175 -1.267541,-30.70345 9.379334,-42.48827 11.277105,-12.48241 31.719555,-16.31625 47.037975,-8.82164 31.67695,15.49808 31.84379,59.62776 0.28365,75.02237 -8.40856,4.10158 -22.2121,4.81247 -31.63008,1.62896 z"
+       id="path991"
+       transform="translate(544.76561,975.92242)" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:14.9915;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 37.188156,132.05339 v -8.59408 H 271.21169 505.23522 v 8.59408 8.59409 H 271.21169 37.188156 Z"
+       id="path993"
+       transform="translate(544.76561,975.92242)" />
+  </g>
+  <desc
+     id="desc977">GoverB(1finger).dxf - scale = 25.400000, origin = (0.000000, 0.000000), method = file</desc>
+</svg>
