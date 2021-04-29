@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+	<TITLE>&#128142; Scale List</TITLE>
+    <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<META http-equiv="content-Type" content="text/html; charset=utf-8" />
+	<META name="keywords" content="guitar, list, scales, tab, tablature">
+	<META name="description" content="List of scales found on GEMS in TAB.">
+	<LINK rel="stylesheet" type="text/css" href="./stylesheet.css"> 
+	<STYLE>
+	table {border-collapse: collapse; border-spacing: 0;}
+	tr:nth-child(even) {background-color: #f2f2f2;}
+	th, td {text-align: left; padding: 1vh 1vw 1vh 1vw;}
+	
+	table {
+    border: 1px solid #ccc;
+    width: 100%;
+    margin:0;
+    padding:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  table tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+		background: #fff;
+
+  }
+
+  table th, table td {
+    padding: 10px;
+    text-align: center;
+
+  }
+
+  table th {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+
+   #card table {
+      border: 0;
+    }
+
+   #card table thead {
+      display: none;
+    }
+
+   #card table tr {
+      margin-bottom: 20px;
+      display: block;
+      border-bottom: 2px solid #ddd;
+	 box-shadow: 2px 2px 1px #dadada;
+
+    }
+
+   #card table td {
+      display: block;
+      text-align: right;
+      font-size: 13px;
+    }
+
+   #card table td:last-child {
+      border-bottom: 0;
+    }
+
+   #card table td::before {
+      content: attr(data-label);
+      float: left;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    	#card	tbody{
+			line-height:0!important;
+		}
+
+  }
+	
+	</STYLE>
+</HEAD>
+<BODY CLASS="Index" STYLE="font-family: serif;">
+<DIV CLASS="IndexNavBar">
+<SPAN STYLE="float: left;">
+	<SPAN CLASS = "NavButtonLeft"><A HREF="./index.html">Home</A></SPAN>
+		&emsp;
+		&#x2007;
+		&emsp;
+		&#x2007;
+		&emsp;
+		&#x2007;
+		&emsp;
+		<INPUT type="text" id="myInput" onkeyup="myFunction()" placeholder="&#x1f50d; Search for ..." title="Type in a name" CLASS="Gear">
+	</SPAN>
+</DIV>
+
+<!-- Scripts -->
+<script>
+function myFunction() {
+    var input = document.getElementById("myInput");
+    var filter = input.value.toUpperCase();
+    var table = document.getElementById("myTable");
+    var tr = table.getElementsByTagName("tr");
+    for (var i = 0; i < tr.length; i++) {
+        if (tr[i].textContent.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+        } else {
+            tr[i].style.display = "none";
+        }      
+    }
+}
+</script>
+
+<DIV CLASS="Shim">&emsp;</DIV>
+<DIV STYLE="clear: both;">
+<HR>
+<H1>Scales</H1>
+<HR>
+</DIV>
+<DIV ID="card">
+<table id="myTable">
+<thead>
+	<tr class="header">
+		<th>Link</th>
+		<th>Notes per octave</th>
+		<th>Scale Mode</th>
+		<th>Key</th>
+		<th>Octave Range</th>
+		<th>Tempo</th>
+		<th>Rhythm</th>
+		<th>Level</th>
+	</tr>
+</thead>
+<tbody>
+<!-- Diatonic -->
+  <tr>
+    <td><A HREF="./Pearl/ScaleCMajor.html">&#10228;</A></td>
+	<th>Diatonic</th>
+	<td>Major (Ionian)</td>
+    <td>C</td>
+	<td>1</td>
+	<td data-label="Tempo">80 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
+	<td>Quarter</td>
+	<td style="font-size:smaller;">[01] Pearl</td>
+  </tr>
+
+  <tr>
+	<td></td>
+	<td style="font-size:smaller; color:rgba(50,20,20,0.33);">Diatonic</td>
+	<td style="font-size:smaller; color:rgba(50,20,20,0.33);">Major (Ionian)</td>
+    <td style="font-size:smaller; color:rgba(50,20,20,0.33);">C</td>
+	<td style="font-size:smaller; color:rgba(50,20,20,0.33);">1</td>
+	<td>120</td>
+	<td>Quarter</td>
+	<td style="font-size:smaller;">[03] Turquoise</td>
+  </tr>
+  
+  <tr>
+    <td></td>
+	<td style="font-size:smaller; color:rgba(50,20,20,0.33);">Diatonic</td>
+	<td style="font-size:smaller; color:rgba(50,20,20,0.33);">Major (Ionian)</td>
+    <td style="font-size:smaller; color:rgba(50,20,20,0.33);">C</td>
+	<td><A HREF="./Pearl/TwinkleTwinkleLittleStar.html">2</A></td>
+	<td>69</td>
+	<td>Duple or Triplet</td>
+	<td style="font-size:smaller;">[05] Garnet</td>
+  </tr>
+	
+  <tr>
+    <td></td>
+	<td style="font-size:smaller; color:rgba(50,20,20,0.33);">Diatonic</td>
+	<td style="font-size:smaller; color:rgba(50,20,20,0.33);">Major (Ionian)</td>
+    <td style="font-size:smaller; color:rgba(50,20,20,0.33);">C</td>
+	<td style="font-size:smaller; color:rgba(50,20,20,0.33);">2</td>
+	<td>108</td>
+	<td>Triplet or Quadruple</td>
+	<td style="font-size:smaller;">[10] Sapphire</td>
+  </tr>
+
+  <tr>
+    <td><A HREF="./Pearl/ScaleGMajor.html">&#10228;</A></td>
+	<td style="font-size:smaller; color:rgba(50,20,20,0.33);">Diatonic</td>
+	<td style="font-size:smaller; color:rgba(50,20,20,0.33);">Major (Ionian)</td>
+    <td>G</td>
+	<td>1</td>
+	<td data-label="Tempo">80 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
+	<td>Quarter</td>
+	<td style="font-size:smaller;">[01] Pearl</td>
+  </tr>
+  
+ <!-- Pentatonic-->
+  <tr>
+    <td data-label="Link"><A HREF="./Pearl/PentatonicScaleGMajor.html"><SPAN STYLE="font-size:x-large;">&#10228;</SPAN></A></td>
+	<td data-label="Notes per octave">Pentatonic</td>
+	<td data-label="Scale mode">Major</td>
+    <td data-label="Key">G</td>
+	<td data-label="Range">1<SPAN STYLE="font-size:smaller;">&times;8<SUP>ve</SUP></SPAN></td>
+	<td data-label="Tempo">80 <SPAN STYLE="font-size:xx-small;">BPM</SPAN></td>
+	<td data-label="Note value">Quarter</td>
+	<td data-label="Level" style="font-size:smaller;">[01] Pearl</td>
+  </tr>
+</tbody>  
+</table>
+</DIV>
+<script language="javascript" type="text/javascript" src="../footer.txt"></script>
+</BODY>
+</HTML>
