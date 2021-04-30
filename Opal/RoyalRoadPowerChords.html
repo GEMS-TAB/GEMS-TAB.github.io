@@ -16,7 +16,7 @@
 	<SPAN CLASS = "NavButtonMid"><A HREF="./OCanada.html">Next</A></SPAN>
 	<SPAN CLASS = "NavButtonMid"><A HREF="./AmazingGrace02.html">Last</A></SPAN>
 	<SPAN CLASS = "NavButtonLeft"><A HREF="../Pearl/RoyalRoadProgression.html">Easier</A></SPAN>
-	<SPAN CLASS = "NavButtonMid" STYLE="opacity:0;">Harder</SPAN>
+	<SPAN CLASS = "NavButtonMid"><A HREF="../Turquoise/RoyalRoadTriads.html">Harder</A></SPAN>
 	<!-- <SPAN CLASS = "NavButtonLeft" STYLE="opacity:0;">YouTube</SPAN> -->
 	<SPAN CLASS = "NavButtonLeft"><A HREF="#" onclick="window.print();return false;">Print</A></SPAN>
 </SPAN>
@@ -30,6 +30,13 @@
       class="w3-button w3-display-topright">&times;</span>
 <H3>Hide | Show</H3>
 <UL style="list-style-type:none;">
+		<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showKey()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Key Signature
+	</LI>
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
 		<input type="checkbox" onclick="showTempo()">
@@ -42,7 +49,7 @@
 		<input type="checkbox" onclick="showRH()">
 		<span class="slider round"></span>
 		</label>
-		&emsp;Right Hand
+		&emsp;Plectrum Technique
 	</LI>
 	<!--
 	<LI STYLE="margin: 1vh 0;">
@@ -89,6 +96,20 @@
 </div>
 
 <!-- Scripts -->
+<script>
+	function showKey() {
+		var x = document.getElementsByClassName("key1");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "none") {
+				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
+			}
+		}
+	}
+</script>
+
 <script>
 	function showTempo() {
 		var x = document.getElementsByClassName("MM");
@@ -216,22 +237,30 @@
 <H1>Royal Road Progression of "Power Chords"</H1>
 <HR>
 </DIV>
-<SPAN CLASS="MM">MM = 100</SPAN><BR /><BR />
+<DIV CLASS="key1">
+	<P>
+	<table>
+	<tr><td>Key:&#x2007;&#x2007;</td><td>F Major</td></tr>
+	<tr><td></td><td><SPAN LANG="ja" STYLE="font-style: italic;">he chōchō</SPAN></td></tr>
+	</table>
+	</P>
+</DIV>
+<DIV CLASS="MM">MM = 100<BR /><BR /></DIV>
 <!-- Key of F major -->
 <!-- First Phrase.  Measures 1-4 -->
 <DIV STYLE="clear: left;">
 <!-- Measure 1 -->
 <SPAN STYLE="float: left;">
 <!--G2--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;B&flat;5&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;C5</SPAN><BR />
-<!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&nbsp;&#x2A05;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&SquareIntersection;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">&emsp;1</SPAN><BR />
 <!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
 <!--B-->B&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--G-->G&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
-<!--D-->D&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>5</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
-<!--A-->A&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--D-->D&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>5</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>5</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
+<!--A-->A&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>1</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>3</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2577;</SPAN><BR />
+<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&#x2007;&#x2007;3&#x2007;&#x2007;&#x2007;4</SPAN><BR />
 <BR />
 </SPAN>
