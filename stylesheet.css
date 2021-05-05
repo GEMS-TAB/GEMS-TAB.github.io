@@ -20,7 +20,7 @@ a:active {color: inherit; text-decoration: underline;}
 body {
 /*	background-color: #F1F1D4; */
 	color: #696969;
-	font-family: 'Menlo-Regular','Overpass Mono','Fira Code','PT Mono','Cousine','Hack', monospace; 	  
+	font-family: 'Menlo-Regular','Courier','Overpass Mono','Fira Code','PT Mono','Cousine','Hack', monospace; 	  
 /*	font-family: 'Consolas', */	
 	font-size: clamp(12px, 1.3vw, 1.3vw);
 /*	font-size: calc(12px + 1.3vw); */
@@ -576,6 +576,44 @@ input:checked + .slider:before {
         transform: scale(-1, 1);
       }
 		
+
+
+.tooltip {
+  text-decoration:none;
+  position:relative;
+}
+ 
+.tooltip span {
+  display:none;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  color:black;
+  background:white; 
+}
+ 
+.tooltip span img {
+  float:left;
+  margin:0px 8px 8px 0;
+}
+ 
+.tooltip:hover span {
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1000;
+  width:auto;
+  min-width:320px;
+  max-width:320px;
+  min-height:128px;
+  border:1px solid black;
+  margin-top:12px;
+  margin-left:12px;
+  overflow:hidden;
+  padding:8px;
+}
+
 @media print {
 	
 	div {page-break-inside: avoid; !important;}
