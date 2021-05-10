@@ -6,22 +6,20 @@
 	<META name="keywords" content="Bransle de Poitou, classical, guitar, Le Roy, tab, tablature">
 	<META name="description" content="Bransle de Poitou, composed by Adrian Le Roy.  A classical guitar piece with music score in guitar tablature.">
 	<LINK rel="stylesheet" type="text/css" href="../stylesheet.css"> 
-	<STYLE>
-		body {font-family: 'Consolas','Fira Code','PT Mono','Cousine','Hack', monospace;}
-	</STYLE>
 </HEAD>
 <BODY CLASS="OpalBody" >
 <DIV CLASS="OpalNavBar">
 <SPAN STYLE="float: left;">
 	<SPAN CLASS = "NavButtonLeft"><A HREF="../index.html">Home</A></SPAN>
 	<SPAN CLASS = "NavButtonMid"><A HREF="./ChromaticScaleOnD.html">First</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./HappyBirthday.html">Prev</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./VsiSoVenciVejli.html">Next</A></SPAN>
+	<SPAN CLASS = "NavButtonMid"><A HREF="./JingleBells.html">Prev</A></SPAN>
+	<SPAN CLASS = "NavButtonMid"><A HREF="./OpalCountryside.html">Next</A></SPAN>
 	<SPAN CLASS = "NavButtonMid"><A HREF="./AmazingGrace02.html">Last</A></SPAN>
 	<!-- <SPAN CLASS = "NavButtonLeft">Easier</SPAN> -->
 	<!-- <SPAN CLASS = "NavButtonMid">Harder</SPAN> -->
 	<SPAN CLASS = "NavButtonLeft"><A HREF="https://youtu.be/fhhHscJpPqk">YouTube</A></SPAN>
 	<SPAN CLASS = "NavButtonMid"><A HREF="https://youtu.be/oCEiJNVWuts">YouTube</A></SPAN>
+	<SPAN CLASS = "NavButtonMid"><A HREF="https://vimeo.com/436846625">Vimeo</A></SPAN>
 	<SPAN CLASS = "NavButtonLeft"><A HREF="#" onclick="window.print();return false;">Print</A></SPAN>
 </SPAN>
 
@@ -36,7 +34,13 @@
       class="w3-button w3-display-topright">&times;</span>
 <H3>Hide | Show</H3>
 <UL style="list-style-type:none;">
-	
+	<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showKey()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Key Signature
+	</LI>	
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
 		<input type="checkbox" onclick="showTempo()">
@@ -44,25 +48,9 @@
 		</label>
 		&emsp;Tempo
 	</LI>
-	<!--
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
-		<input type="checkbox" onclick="showRH()">
-		<span class="slider round"></span>
-		</label>
-		&emsp;Right Hand
-	</LI>
-	<LI STYLE="margin: 1vh 0;">
-		<label class="switch">
-		<input type="checkbox" onclick="showLH()">
-		<span class="slider round"></span>
-		</label>
-		&emsp;Left Hand
-	</LI>
-	-->
-	<LI STYLE="margin: 1vh 0;">
-		<label class="switch">
-		<input type="checkbox" onclick="showStems()">
+		<input type="checkbox" checked onclick="showStems()">
 		<span class="slider round"></span>
 		</label>
 		&emsp;Rhythm
@@ -74,21 +62,26 @@
 		</label>
 		&emsp;Count
 	</LI>
-	<!--
-	<LI STYLE="margin: 1vh 0;">
-		<label class="switch">
-		<input type="checkbox" onclick="showLyrics()">
-		<span class="slider round"></span>
-		</label>
-		&emsp;Lyrics
-	</LI>
-	-->
 </UL>
     </div>
   </div>
 </div>
 
 <!-- Scripts -->
+<script>
+	function showKey() {
+		var x = document.getElementsByClassName("key1");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "none") {
+				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
+			}
+		}
+	}
+</script>
+
 <script>
 	function showTempo() {
 		var x = document.getElementsByClassName("MM");
@@ -104,65 +97,14 @@
 </script>
 
 <script>
-		function showRH() {
-		var y = document.getElementsByClassName("RH");
-		var j;
-		for (j = 0; j < y.length; j++) {
-			if (y[j].style.visibility === "visible") {
-				y[j].style.visibility = "hidden";
-			} else {
-				y[j].style.visibility = "visible";
-			}
-		}
-	}
-</script>
-
-<script>
-	function showLH() {
-		var x = document.getElementsByClassName("LHabove");
-		var y = document.getElementsByClassName("LHinline");
-		var z = document.getElementsByClassName("LHfiller");
-		var i;
-		var j;
-		var k;
-		
-		for (i = 0; i < x.length; i++) {
-			if (x[i].style.visibility === "visible") {
-				x[i].style.visibility = "hidden";
-			} else {
-				x[i].style.visibility = "visible";
-			}
-		}
-
-		for (j = 0; j < y.length; j++) {
-			if (y[j].style.display === "inline") {
-				y[j].style.display = "none";
-			} else {
-				y[j].style.display = "inline";
-			}
-		}
-
-
-		for (k = 0; k < z.length; k++) {
-			if (z[k].style.display === "inline") {
-				z[k].style.display = "none";
-			} else {
-				z[k].style.display = "inline";
-			}
-		}
-
-}
-</script>
-
-<script>
 	function showStems() {
-		var x = document.getElementsByClassName("stems");
+		var x = document.getElementsByClassName("stems1");
 		var i;
 		for (i = 0; i < x.length; i++) {
-			if (x[i].style.visibility === "visible") {
-				x[i].style.visibility = "hidden";
-			} else {
+			if (x[i].style.visibility === "hidden") {
 				x[i].style.visibility = "visible";
+			} else {
+				x[i].style.visibility = "hidden";
 			}
 		}
 	}
@@ -182,28 +124,27 @@
 	}
 </script>
 
-<script>
-	function showLyrics() {
-		var x = document.getElementsByClassName("lyrics1");
-		var i;
-		for (i = 0; i < x.length; i++) {
-			if (x[i].style.display === "block") {
-				x[i].style.display = "none";
-			} else {
-				x[i].style.display = "block";
-			}
-		}
-	}
-</script>
-	
-<DIV style="clear: both; font-size:7vh;">&emsp;</DIV>
+<DIV CLASS = "Shim">&emsp;</DIV>
 <DIV STYLE="clear: both;">
 <HR>
+<SPAN LANG="fr" STYLE="font-style: italic;">
 <H1  STYLE="float: left;">Bransle de Poitou</H1>
+</SPAN>
 <DIV STYLE="text-align: right;">
 Adrian Le Roy<BR />
 </DIV>
 <HR STYLE="clear: both;">
+</DIV>
+<DIV CLASS="key1">
+	<P>
+	<table>
+	<tr><td>Key:&#x2007;&#x2007;</td><td>C Major</td></tr>
+	<tr><td></td><td><SPAN LANG="fr" STYLE="font-style: italic;">Do majeur</SPAN></td></tr>
+	<tr><td>&nbsp;</td><td></td></tr>
+	<tr><td>Mode:&#x2007;&#x2007;</td><td>Mixolydian G</td></tr>
+	<tr><td></td><td><SPAN LANG="fr" STYLE="font-style: italic;">Mixolydien Sol</SPAN></td></tr>
+	</table>
+	</P>
 </DIV>
 <SPAN CLASS="MM">MM = 180 BPM</SPAN><BR /><BR />
 <!-- First Phrase.  Pick-up -->
@@ -217,7 +158,7 @@ Adrian Le Roy<BR />
 <!--D-->D&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->A&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;&#x2007;5&#x2007;&#x2007;&#x2007;6</SPAN><BR />
 <BR />
 </SPAN>
@@ -230,7 +171,7 @@ Adrian Le Roy<BR />
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&#x2007;&#x2007;3&#x2007;&#x2007;&#x2007;4&#x2007;&#x2007;&#x2007;5&#x2007;&#x2007;&#x2007;6</SPAN><BR />
 <BR />
 </SPAN>
@@ -243,7 +184,7 @@ Adrian Le Roy<BR />
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
@@ -256,7 +197,7 @@ Adrian Le Roy<BR />
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
@@ -269,7 +210,7 @@ Adrian Le Roy<BR />
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
@@ -285,7 +226,7 @@ Adrian Le Roy<BR />
 <!--D-->D&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->A&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&#x2007;&#x2007;3&#x2007;&#x2007;&#x2007;4&#x2007;&#x2007;&#x2007;5&#x2007;&#x2007;&#x2007;6</SPAN><BR />
 <BR />
 </SPAN>
@@ -298,7 +239,7 @@ Adrian Le Roy<BR />
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#8226;&#x256B;&#x256B;&#8226;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x256B;&#x256B;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2568;&#x2568;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&#x2007;&#x2007;3&#x2007;&#x2007;&#x2007;4&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;5&#x2007;&#x2007;&#x2007;6</SPAN><BR />
 <BR />
 </SPAN>
@@ -311,7 +252,7 @@ Adrian Le Roy<BR />
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&#x2007;&#x2007;3&#x2007;&#x2007;&#x2007;4&#x2007;&#x2007;&#x2007;5&#x2007;&#x2007;&#x2007;6</SPAN><BR />
 <BR />
 </SPAN>
@@ -324,7 +265,7 @@ Adrian Le Roy<BR />
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
@@ -340,7 +281,7 @@ Adrian Le Roy<BR />
 <!--D-->D&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->A&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
@@ -353,7 +294,7 @@ Adrian Le Roy<BR />
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
@@ -366,7 +307,7 @@ Adrian Le Roy<BR />
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
@@ -379,7 +320,7 @@ Adrian Le Roy<BR />
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#8226;&#x2562;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2515;&#x2501;&#x2501;&#x2501;&#x2537;&#x2501;&#x2501;&#x2501;&#x2519;&#x2007;&#x2007;&#x2007;&#x2515;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;4</SPAN><BR />
 <BR />
 </SPAN>
