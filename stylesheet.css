@@ -485,9 +485,17 @@ input:checked + .slider:before {
 
 	.Accompaniment{visibility: hidden; color: black;}
 	.Accompaniment1{visibility: visible; color: black;}
+	.count{visibility: hidden; color: #77dd77;}
+	.count0{visibility: hidden; color: #77dd77;}
+	.count1{visibility: visible; color: #77dd77;}
+	.key0{display: none;}
+	.key1{display: block;}
 	.LHabove{visibility: hidden; color: #c23b22; font-style: italic;}
 	.LHinline{display: none; color: #c23b22; font-style: italic;}
 	.LHfiller{display: none; color: inherit;}
+	.lyrics0{display: none; color: #303030;}
+	.lyrics1{display: block; color: #303030;}
+	.lyrics2{color: #303030;}
 	.RH{visibility: hidden; color: #779ecb;}
 	.pick0{visibility: hidden; color: #779ecb;}
 	.pick1{visibility: visible; color: #779ecb;}
@@ -495,12 +503,6 @@ input:checked + .slider:before {
 	.stems{visibility: hidden; color: black;}
 	.stems0{visibility: hidden; color: black;}
 	.stems1{visibility: visible; color: black;}
-	.count{visibility: hidden; color: #77dd77;}
-	.key0{display: none;}
-	.key1{display: block;}
-	.lyrics0{display: none; color: #303030;}
-	.lyrics1{display: block; color: #303030;}
-	.lyrics2{color: #303030;}
 	.duo{display: none;}
 	.DuoInline{display: none;}
  
