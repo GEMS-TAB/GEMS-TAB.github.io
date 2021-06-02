@@ -34,7 +34,7 @@
 <UL style="list-style-type:none;">
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
-		<input type="checkbox" onclick="showTempo()">
+		<input type="checkbox" checked onclick="showTempo()">
 		<span class="slider round"></span>
 		</label>
 		&emsp;Tempo
@@ -55,7 +55,7 @@
 	</LI>
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
-		<input type="checkbox" onclick="showStems()">
+		<input type="checkbox" checked onclick="showStems()">
 		<span class="slider round"></span>
 		</label>
 		&emsp;Rhythm
@@ -69,7 +69,7 @@
 	</LI>
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
-		<input type="checkbox" onclick="showLyrics()">
+		<input type="checkbox" checked onclick="showLyrics()">
 		<span class="slider round"></span>
 		</label>
 		&emsp;Lyrics
@@ -82,13 +82,13 @@
 <!-- Scripts -->
 <script>
 	function showTempo() {
-		var x = document.getElementsByClassName("MM");
+		var x = document.getElementsByClassName("BPM");
 		var i;
 		for (i = 0; i < x.length; i++) {
-			if (x[i].style.display === "block") {
-				x[i].style.display = "none";
-			} else {
+			if (x[i].style.display === "none") {
 				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
 			}
 		}
 	}
@@ -147,13 +147,13 @@
 
 <script>
 	function showStems() {
-		var x = document.getElementsByClassName("stems");
+		var x = document.getElementsByClassName("stems1");
 		var i;
 		for (i = 0; i < x.length; i++) {
-			if (x[i].style.visibility === "visible") {
-				x[i].style.visibility = "hidden";
-			} else {
+			if (x[i].style.visibility === "hidden") {
 				x[i].style.visibility = "visible";
+			} else {
+				x[i].style.visibility = "hidden";
 			}
 		}
 	}
@@ -178,22 +178,22 @@
 		var x = document.getElementsByClassName("lyrics1");
 		var i;
 		for (i = 0; i < x.length; i++) {
-			if (x[i].style.display === "block") {
-				x[i].style.display = "none";
-			} else {
+			if (x[i].style.display === "none") {
 				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
 			}
 		}
 	}
 </script>
 	
-<DIV style="clear: both; font-size:7vh;">&emsp;</DIV>
+<DIV CLASS="Shim">&emsp;</DIV>
 <DIV STYLE="clear: both;">
 <HR>
 <H1>Blues Scale in D minor</H1>
 <HR>
 </DIV>
-<SPAN CLASS="MM">MM = 108 BPM</SPAN><BR /><BR />
+<SPAN CLASS="BPM">MM = 108 BPM</SPAN><BR /><BR />
 <!-- Measures 1-2 -->
 <DIV STYLE="clear: left;">
 <!-- Measure 1 -->
@@ -207,7 +207,7 @@
 <!--D-->D&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>10</STRONG>&#x2500;<STRONG>12</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->A&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>10</STRONG>&#x2500;<STRONG>11</STRONG>&#x2500;<STRONG>12</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->E&#x2500;<STRONG>10</STRONG>&#x2500;<STRONG>13</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2007;&#x2558;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x255B;&#x2007;&#x2007;&#x2558;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x255B;&#x2007;&#x2007;&#x2558;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x255B;&#x2007;&#x2007;&#x2558;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x255B;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2007;&#x2558;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x255B;&#x2007;&#x2007;&#x2558;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x255B;&#x2007;&#x2007;&#x2558;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x255B;&#x2007;&#x2007;&#x2558;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x255B;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;&#x2007;1&#x2007;&#x2007;a&#x2007;&#x2007;&plus;&#x2007;&#x2007;a&#x2007;&#x2007;2&#x2007;&#x2007;a&#x2007;&#x2007;&plus;&#x2007;&#x2007;a&#x2007;&#x2007;3&#x2007;&#x2007;a&#x2007;&#x2007;&plus;&#x2007;&#x2007;a&#x2007;&#x2007;4&#x2007;&#x2007;a&#x2007;&#x2007;&plus;&#x2007;&#x2007;a</SPAN><BR />
 <BR />
 </SPAN>
@@ -223,7 +223,7 @@
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>12</STRONG>&#x2500;<STRONG>10</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>12</STRONG>&#x2500;<STRONG>11</STRONG>&#x2500;<STRONG>10</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>13</STRONG>&#x2500;<STRONG>10</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
-<!--R--><SPAN CLASS="stems">&#x2007;&#x2007;&#x2558;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x255B;&#x2007;&#x2007;&#x2558;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x255B;&#x2007;&#x2007;&#x2577;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&#x2007;&#x2007;&#x2558;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x255B;&#x2007;&#x2007;&#x2558;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x2567;&#x2550;&#x2550;&#x255B;&#x2007;&#x2007;&#x2577;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;a&#x2007;&#x2007;&plus;&#x2007;&#x2007;a&#x2007;&#x2007;2&#x2007;&#x2007;a&#x2007;&#x2007;&plus;&#x2007;&#x2007;a&#x2007;&#x2007;3&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;4&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;</SPAN><BR />
 <BR />
 </SPAN>
