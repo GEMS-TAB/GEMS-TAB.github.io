@@ -47,6 +47,10 @@ strong{
 	color: black;
 }
 
+	table {border-collapse: collapse; border-spacing: 0;}
+	tr:nth-child(even) {background-color: #f2f2f2;}
+	th, td {text-align: left; padding: 2px 16px 2px 16px;}
+	
 .NavButtonLeft {
 	position: relative;
 	display: inline-block;
@@ -357,6 +361,8 @@ strong{
 	padding: 1vh;
 	}
 
+
+
 	
 .Gear{
 	background-color: inherit;
@@ -397,7 +403,7 @@ strong{
 
 }
 	
-	.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
 .w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
 
 .w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
