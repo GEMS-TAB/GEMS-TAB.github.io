@@ -3,25 +3,34 @@
 <HEAD>
 	<TITLE>&#128142; We Wish You a Merry Christmas [TAB]</TITLE>
     <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
-	<META name="keywords" content="We Wish You a Merry Christmas, carol, guitar, score, tab, tablature, Xmas">
+	<META name="keywords" content="We Wish You a Merry Christmas, carol, Christmas, guitar, score, tab, tablature, tabulature, Xmas">
 	<META name="description" content="We Wish You a Merry Christmas.  Music score in guitar tablature.">
 	<LINK rel="stylesheet" type="text/css" href="../stylesheet.css"> 
 </HEAD>
 <BODY CLASS="OpalBody">
 <DIV CLASS="OpalNavBar">
-<SPAN STYLE="float: left;">
-	<SPAN CLASS = "NavButtonLeft"><A HREF="../index.html">Home</A></SPAN>
-	<SPAN CLASS = "NavButtonLeft"><A HREF="./ChromaticScaleOnD.html">First</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./MwanaWaNnyabo.html">Prev</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./1stExerciseOnEString.html">Next</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./AmazingGrace02.html">Last</A></SPAN>
-	<SPAN CLASS = "NavButtonLeft" STYLE="opacity:0;"><A HREF="">Easier</A></SPAN>
-	<SPAN CLASS = "NavButtonMid" STYLE="opacity:0;"><A HREF="">Harder</A></SPAN>
-	<SPAN CLASS = "NavButtonLeft"><A HREF="https://youtu.be/SxaayDwgZWs">YouTube</A></SPAN>
-	<SPAN CLASS = "NavButtonLeft"><A HREF="#" onclick="window.print();return false;">Print</A></SPAN>
-</SPAN>
-<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
-<SPAN CLASS = "Gear"><A HREF="https://imslp.org/wiki/Special:ReverseLookup/436150">&#x1f3bc;</A></SPAN>
+	<SPAN STYLE="float: left;">
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">&#x2630;</button>
+				<div id="myDropdown" class="dropdown-content">
+					<A HREF="../index.html">Home</a>
+					<A HREF="../songlist.html">Songs</a>
+					<A HREF="../syllabus.html">Syllabus</a>
+					<HR>
+					<A HREF="./MwanaWaNnyabo.html">Prev</A>
+					<A HREF="./1stExerciseOnEString.html">Next</A>
+					<HR>
+					<A HREF="#" onclick="window.print();return false;">Print</A>
+					<HR>
+					<A HREF="https://imslp.org/wiki/Special:ReverseLookup/436150">&#x1f3bc; Staff Notation</A>
+					<HR>
+					<A HREF="https://youtu.be/SxaayDwgZWs">YouTube</A>
+				</div>
+		</div>
+		<SPAN CLASS = "NavButtonLeft" STYLE="opacity:0"><A HREF="#">Easier</A></SPAN>
+		<SPAN CLASS = "NavButtonMid" STYLE="opacity:0"><A HREF="#">Harder</A></SPAN>
+	</SPAN>
+	<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
 </DIV>
 <!-- The Modal -->
 <div id="SettingsModal" class="w3-modal">
@@ -31,6 +40,13 @@
       class="w3-button w3-display-topright">&times;</span>
 <H3>Hide | Show</H3>
 <UL style="list-style-type:none;">
+		<LI STYLE="margin: 1vh 0;">
+		<label class="switch">
+		<input type="checkbox" checked onclick="showKey()">
+		<span class="slider round"></span>
+		</label>
+		&emsp;Key Signature
+	</LI>
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
 		<input type="checkbox" onclick="showTempo()">
@@ -54,13 +70,13 @@
 		&emsp;Left Hand
 	</LI>
 	-->
-	<LI STYLE="margin: 1vh 0;">
-		<label class="switch">
-		<input type="checkbox" onclick="showStems()">
-		<span class="slider round"></span>
-		</label>
-		&emsp;Rhythm
-	</LI>
+			<LI STYLE="margin: 1vh 0;">
+				<label class="switch">
+				<input type="checkbox" checked onclick="showStems()">
+				<span class="slider round"></span>
+				</label>
+				&emsp;Rhythm
+			</LI>
 	<LI STYLE="margin: 1vh 0;">
 		<label class="switch">
 		<input type="checkbox" onclick="showCount()">
@@ -81,6 +97,40 @@
 </div>
 
 <!-- Scripts -->
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<script>
+	function showKey() {
+		var x = document.getElementsByClassName("key1");
+		var i;
+		for (i = 0; i < x.length; i++) {
+			if (x[i].style.display === "none") {
+				x[i].style.display = "block";
+			} else {
+				x[i].style.display = "none";
+			}
+		}
+	}
+</script>
 <script>
 	function showTempo() {
 		var x = document.getElementsByClassName("MM");
@@ -148,13 +198,13 @@
 
 <script>
 	function showStems() {
-		var x = document.getElementsByClassName("stems");
+		var x = document.getElementsByClassName("stems1");
 		var i;
 		for (i = 0; i < x.length; i++) {
-			if (x[i].style.visibility === "visible") {
-				x[i].style.visibility = "hidden";
-			} else {
+			if (x[i].style.visibility === "hidden") {
 				x[i].style.visibility = "visible";
+			} else {
+				x[i].style.visibility = "hidden";
 			}
 		}
 	}
@@ -199,9 +249,22 @@
 		</DIV>
 <HR STYLE="clear: both;">
 </DIV>
-<SPAN CLASS="MM">MM = 96 BPM minimum</SPAN><BR /><BR />
+<DIV CLASS="key1">
+	<P>
+	<table>
+	<tr><td>Key:</td><td>G Major</td></tr>
+	</table>
+	</P>
+</DIV>
+<DIV CLASS="MM">
+	<P>
+	<table>
+	<tr><td>MM:&#x2007;</td><td>96 BPM minimum</td></tr>
+	</table>
+	</P>
+</DIV>
 <!-- First Phrase.  Measures 0-4 -->
-<DIV STYLE="clear: left;">
+<DIV CLASS="tab70" STYLE="clear: left;">
 <!-- Measure 0 -->
 <SPAN CLASS="tab" STYLE="float: left;">
 <!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
@@ -213,13 +276,13 @@
 <!--D-->D&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->A&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 1 -->
 <SPAN CLASS="tab" STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
 <!--LH-->
 <!--#--><SPAN CLASS="measure">1</SPAN><BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -228,13 +291,13 @@
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>4</STRONG>&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&plus;&nbsp;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2519;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&plus;&nbsp;3&nbsp;&plus;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 2 -->
 <SPAN CLASS="tab" STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
 <!--LH-->
 <!--#--><SPAN CLASS="measure">2</SPAN><BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -243,13 +306,13 @@
 <!--D-->&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 3 -->
 <SPAN CLASS="tab" STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
 <!--LH-->
 <!--#--><SPAN CLASS="measure">3</SPAN><BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -258,13 +321,13 @@
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2519;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&plus;&nbsp;3&nbsp;&plus;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 4 -->
 <SPAN CLASS="tab" STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
 <!--LH-->
 <!--#--><SPAN CLASS="measure">4</SPAN><BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;<BR />
@@ -273,16 +336,16 @@
 <!--D-->&#x2500;&#x2500;<STRONG>4</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
 </DIV>
 <!-- Second Phrase.  Measures 5-8 -->
-<DIV STYLE="clear: left;">
+<DIV CLASS="tab70" STYLE="clear: left;">
 <!-- Measure 5 -->
 <SPAN CLASS="tab" STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
 <!--LH--><SPAN CLASS="LHabove">&#x2007;</SPAN><BR />
 <!--#--><SPAN CLASS="measure">&emsp;5</SPAN><BR />
 <!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -291,13 +354,13 @@
 <!--D-->D&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->A&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&plus;&nbsp;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2519;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&plus;&nbsp;3&nbsp;&plus;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 6 -->
 <SPAN CLASS="tab" STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
 <!--LH--><SPAN CLASS="LHabove">&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;2</SPAN><BR />
 <!--#--><SPAN CLASS="measure">6</SPAN><BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -306,13 +369,13 @@
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&plus;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 7 -->
 <SPAN CLASS="tab" STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
 <!--LH--><SPAN CLASS="LHabove">&#x2007;&#x2007;3</SPAN><BR />
 <!--#--><SPAN CLASS="measure">7</SPAN><BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -321,13 +384,13 @@
 <!--D-->&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>4</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#x2577;&#xb7;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 8 -->
 <SPAN CLASS="tab" STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
 <!--LH--><SPAN CLASS="LHabove">&#x2007;&#x2007;3</SPAN><BR />
 <!--#--><SPAN CLASS="measure">8</SPAN><BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2510;<BR />
@@ -336,16 +399,16 @@
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&#x23dd;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3</SPAN><BR />
 <BR />
 </SPAN>
 </DIV>
 <!-- Third Phrase.  Measures 9-12 -->
-<DIV STYLE="clear: left;">
+<DIV CLASS="tab70" STYLE="clear: left;">
 <!-- Measure 9 -->
 <SPAN CLASS="tab" STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
 <!--LH-->
 <!--#--><SPAN CLASS="measure">&emsp;9</SPAN><BR />
 <!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -354,8 +417,8 @@
 <!--D-->D&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->A&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&nbsp;&#124;&#xb7;&nbsp;&nbsp;&nbsp;&nbsp;&#x2519;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&plus;&nbsp;3&nbsp;&plus;&nbsp;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 10 -->
@@ -369,13 +432,13 @@
 <!--D-->&#x2500;&#x2500;<STRONG>4</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>4</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 11 -->
 <SPAN CLASS="tab" STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;v&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
 <!--LH-->
 <!--#--><SPAN CLASS="measure">11</SPAN><BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -384,8 +447,8 @@
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>4</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#124;&#xb7;&nbsp;&nbsp;&nbsp;&nbsp;&#x2519;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&plus;&nbsp;3&nbsp;&plus;&nbsp;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 12 -->
@@ -399,16 +462,16 @@
 <!--D-->&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2524;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2518;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
 </DIV>
 <!-- Fourth Phrase.  Measures 13-16 -->
-<DIV STYLE="clear: left;">
+<DIV CLASS="tab70" STYLE="clear: left;">
 <!-- Measure 13 -->
 <SPAN CLASS="tab" STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
 <!--LH-->
 <!--#--><SPAN CLASS="measure">&emsp;13</SPAN><BR />
 <!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -417,13 +480,13 @@
 <!--D-->D&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->A&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->E&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&plus;&nbsp;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 14 -->
 <SPAN CLASS="tab" STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;v</SPAN><BR />
 <!--LH-->
 <!--#--><SPAN CLASS="measure">14</SPAN><BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -432,13 +495,13 @@
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;&#x2500;&#x2500;<STRONG>0</STRONG>&#x2500;<STRONG>0</STRONG>&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#x2577;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
-<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#x2515;&#x2501;&#x2519;</SPAN><BR />
+<!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&plus;</SPAN><BR />
 <BR />
 </SPAN>
 <!-- Measure 15 -->
 <SPAN CLASS="tab" STYLE="float: left;">
-<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;</SPAN><BR />
+<!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2A05;&#x2007;&#x2007;&#x2007;&SquareIntersection;&#x2007;&#x2007;&#x2007;&SquareIntersection;</SPAN><BR />
 <!--LH-->
 <!--#--><SPAN CLASS="measure">15</SPAN><BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x252C;<BR />
@@ -447,7 +510,7 @@
 <!--D-->&#x2500;&#x2500;<STRONG>2</STRONG>&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;<STRONG>4</STRONG>&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x253C;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2534;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#x2577;&#xb7;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;&#124;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
@@ -462,7 +525,7 @@
 <!--D-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
 <!--A-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2562;<BR />
 <!--E-->&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x255C;<BR />
-<!--R--><SPAN CLASS="stems">&nbsp;&nbsp;&#x2577;</SPAN><BR />
+<!--R--><SPAN CLASS="stems1">&nbsp;&nbsp;&#x2577;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;</SPAN><BR />
 <BR />
 </SPAN>
