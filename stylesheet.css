@@ -222,6 +222,8 @@ strong{
 	padding: 1vh;
 }
 
+
+
 .Opal{
 	background-color: #e5f7f4;
 	color: black;
@@ -706,6 +708,17 @@ input:checked + .slider:before {
   padding:8px;
 }
 
+
+#PearlH2 {text-decoration: underline #F5DDDA;}
+#OpalH2 {text-decoration: underline #6ED1B4;}
+#TurquoiseH2 {text-decoration: underline #45B8AC;}
+#PeridotH2 {text-decoration: underline #7B9344;}
+#GarnetH2 {text-decoration: underline #943543;}
+#AmethystH2 {text-decoration: underline #824B77;}
+#AquamarineH2{text-decoration: underline #9DC6D8;}
+#EmeraldH2{text-decoration: underline #009874;}
+#TopazH2{text-decoration: underline #D3833D;}
+
 @media print {
 	
 	body{color: black; 	font-size: clamp(12px, 2vw, 6.25vw);}
@@ -730,7 +743,15 @@ input:checked + .slider:before {
 	.tab80{color: black; font-size: clamp(11pt, 2.0vw, 2.0vw);}
 	.tab115{color: black; font-size: 1.4vw;}
 	.TurquoiseNavBar{display: none !important;}
-
+	#PearlH2 {color: silver; text-decoration: none;}
+	#OpalH2 {color: silver; text-decoration: none;}
+	#TurquoiseH2 {color: silver; text-decoration: none;}
+	#PeridotH2 {color: silver; text-decoration: none;}
+	#GarnetH2 {color: silver; text-decoration: none;}
+	#AmethystH2 {color: silver; text-decoration: none;}
+	#AquamarineH2 {color: silver; text-decoration: none;}
+	#EmeraldH2 {color: silver; text-decoration: none;}
+	#TopazH2 {color: silver; text-decoration: none;}
 }
 
 
