@@ -9,23 +9,31 @@
 </HEAD>
 <BODY CLASS="OpalBody" >
 <DIV CLASS="OpalNavBar">
-<SPAN STYLE="float: left;">
-	<SPAN CLASS = "NavButtonLeft"><A HREF="../index.html">Home</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./ChromaticScaleOnD.html">First</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./JingleBells.html">Prev</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./OpalCountryside.html">Next</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./AmazingGrace02.html">Last</A></SPAN>
-	<!-- <SPAN CLASS = "NavButtonLeft">Easier</SPAN> -->
-	<!-- <SPAN CLASS = "NavButtonMid">Harder</SPAN> -->
-	<SPAN CLASS = "NavButtonLeft"><A HREF="https://youtu.be/fhhHscJpPqk">YouTube</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="https://youtu.be/oCEiJNVWuts">YouTube</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="https://vimeo.com/436846625">Vimeo</A></SPAN>
-	<SPAN CLASS = "NavButtonLeft"><A HREF="#" onclick="window.print();return false;">Print</A></SPAN>
-</SPAN>
-
-<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
+	<SPAN STYLE="float: left;">
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">&#x2630;</button>
+				<div id="myDropdown" class="dropdown-content">
+					<A HREF="../index.html">Home</a>
+					<A HREF="../songlist.html#BransleDePoitou">Songs</a>
+					<A HREF="../syllabus.html">Syllabus</a>
+					<HR>
+					<A HREF="./JingleBells.html">Prev</A>
+					<A HREF="./OpalCountryside.html">Next</A>
+					<HR>
+					<A HREF="#" onclick="window.print();return false;">Print</A>
+					<HR>
+					<A HREF="https://youtu.be/fhhHscJpPqk">YouTube</A>
+					<A HREF="https://youtu.be/oCEiJNVWuts">YouTube</A>
+					<A HREF="https://vimeo.com/436846625">Vimeo</A>
+					<HR>
+					<A HREF="../UKE-TAB/Garnet/BransleDePoitou.html">Ukulele</A>
+				</div>
+		</div>
+		<SPAN CLASS = "NavButtonLeft" STYLE="opacity:0"><A HREF="#">Easier</A></SPAN>
+		<SPAN CLASS = "NavButtonMid" STYLE="opacity:0"><A HREF="#">Harder</A></SPAN>
+	</SPAN>
+	<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
 </DIV>
-
 <!-- The Modal -->
 <div id="SettingsModal" class="w3-modal">
   <div class="modal-content">
@@ -68,6 +76,27 @@
 </div>
 
 <!-- Scripts -->
+<script>
+/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
 <script>
 	function showKey() {
 		var x = document.getElementsByClassName("key1");
@@ -148,7 +177,7 @@ Adrian Le Roy<BR />
 </DIV>
 <SPAN CLASS="MM">MM = 180 BPM</SPAN><BR /><BR />
 <!-- First Phrase.  Pick-up -->
-<DIV STYLE="clear: left;">
+<DIV CLASS = "tab115" STYLE="clear: left;">
 <!-- Measure 1 -->
 <SPAN STYLE="float: left;">
 <!--#--><SPAN CLASS="measure">&#x2007;</SPAN><BR />
@@ -216,7 +245,7 @@ Adrian Le Roy<BR />
 </SPAN>
 </DIV>
 <!-- Second Phrase.  Measures 5-8 -->
-<DIV STYLE="clear: left;">
+<DIV CLASS = "tab115" STYLE="clear: left;">
 <!-- Measure 5 -->
 <SPAN STYLE="float: left;">
 <!--#--><SPAN CLASS="measure">&#x2007;5</SPAN><BR />
@@ -271,7 +300,7 @@ Adrian Le Roy<BR />
 </SPAN>
 </DIV>
 <!-- Third Phrase.  Measures 9-12 -->
-<DIV STYLE="clear: left;">
+<DIV CLASS = "tab115" STYLE="clear: left;">
 <!-- Measure 9 -->
 <SPAN STYLE="float: left;">
 <!--#--><SPAN CLASS="measure">&nbsp;9</SPAN><BR />
