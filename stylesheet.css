@@ -708,7 +708,67 @@ input:checked + .slider:before {
   padding:8px;
 }
 
-
+		.Prl {
+			list-style-position: inside;
+			padding-left: 1vw;
+			border-left: solid 2vw #F5DDDA;
+			}
+		.Opl {
+			list-style-position: inside;
+			padding-left: 1vw;
+			border-left: solid 2vw #6ED1B4;
+			}
+		.Trq {
+			list-style-position: inside;
+			padding-left: 1vw;
+			border-left: solid 2vw #45B8AC;
+			}
+		.Pdt {
+			list-style-position: inside;
+			padding-left: 1vw;
+			border-left: solid 2vw #7B9344;
+			}
+		.Grn {
+			list-style-position: inside;
+			padding-left: 1vw;
+			border-left: solid 2vw #943543;
+			}
+		.Ams {
+			list-style-position: inside;
+			padding-left: 1vw;
+			border-left: solid 2vw #824B77;
+			}
+		.Aqm {
+			list-style-position: inside;
+			padding-left: 1vw;
+			border-left: solid 2vw #9DC6D8;
+			}
+		.Emr {
+			list-style-position: inside;
+			padding-left: 1vw;
+			border-left: solid 2vw #009874;
+			}
+		.Tpz {
+			list-style-position: inside;
+			padding-left: 1vw;
+			border-left: solid 2vw #D3833D;
+			}
+		.Sph {
+			list-style-position: inside;
+			padding-left: 1vw;
+			border-left: solid 2vw #126180;
+			}
+		.Rby {
+			list-style-position: inside;
+			padding-left: 1vw;
+			border-left: solid 2vw #bb0a1e;
+			}
+		.Dmd {
+			list-style-position: inside;
+			padding-left: 1vw;
+			border-left: solid 2vw #9ac5db;
+			}
+			
 #PearlH2 {text-decoration: underline #F5DDDA;}
 #OpalH2 {text-decoration: underline #6ED1B4;}
 #TurquoiseH2 {text-decoration: underline #45B8AC;}
@@ -718,6 +778,9 @@ input:checked + .slider:before {
 #AquamarineH2{text-decoration: underline #9DC6D8;}
 #EmeraldH2{text-decoration: underline #009874;}
 #TopazH2{text-decoration: underline #D3833D;}
+#SapphireH2{text-decoration: underline #126180;}
+#RubyH2{text-decoration: underline #bb0a1e;}
+#DiamondH2{text-decoration: underline #9ac5db;}
 
 @media print {
 	
@@ -752,6 +815,9 @@ input:checked + .slider:before {
 	#AquamarineH2 {color: silver; text-decoration: none;}
 	#EmeraldH2 {color: silver; text-decoration: none;}
 	#TopazH2 {color: silver; text-decoration: none;}
+	#SapphireH2{color: silver; text-decoration: none;}
+	#RubyH2{color: silver; text-decoration: none;}
+	#DiamondH2{color: silver; text-decoration: none;}
 }
 
 
