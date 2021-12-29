@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<HTML LANG="en">
+<HEAD>
+	<TITLE>&#128142; Exercises</TITLE>
+    <META charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+	<META http-equiv="content-Type" content="text/html; charset=utf-8" />
+	<META name="keywords" content="exercises, guitar, list, tab, tablature">
+	<META name="description" content="Syllabus for GEMS-TAB.">
+	<LINK rel="stylesheet" type="text/css" href="./stylesheet.css"> 
+	<STYLE>
+		#myUL {
+			padding: 0;
+			margin: 0;
+			}
+
+	</STYLE>
+</HEAD>
+<BODY CLASS="Index" STYLE="font-family: serif;">
+
+<DIV CLASS="IndexNavBar">
+	<SPAN STYLE="float: left;">
+		<DIV CLASS="dropdown">
+			<button onclick="myDropdownFunction()" class="dropbtn">&#x2630;</button>
+			<div id="myDropdown" class="dropdown-content">
+				<A HREF="./index.html">Home</a>
+				<HR>
+				<A HREF="#" onclick="window.print();return false;">Print</A>
+			</div>				
+		</DIV>
+	</SPAN>
+		<INPUT type="text" id="myInput" onkeyup="myFunction()" placeholder="&#x1f50d; Search for ..." title="Type in an exercises" CLASS="Gear">
+</DIV>
+
+<DIV CLASS="Shim">&emsp;</DIV>
+<DIV STYLE="clear: both;">
+<HR>
+<H1 CLASS="HeaderUke">Exercises & Studies</H1>
+<HR>
+</DIV>
+<OL ID="myOL">
+	<H2 CLASS = "H2Uke" ID="PearlH2">Level 1:  Pearl</H2>
+		<LI CLASS = "Prl" ID=""><a href="./Pearl/Ex1.html">Exercise 1</a></LI>
+		<LI CLASS = "Prl" ID=""><A HREF="./Pearl/VeryBasicBlues.html">Very Basic Blues Progression</A></LI>
+		<LI CLASS = "Prl" ID=""><A HREF="./Pearl/VeryBasicDooWop.html">Very Basic Doo-Wop Progression</A></LI>
+		<LI CLASS = "Prl" ID=""><A HREF="./Pearl/JazzCat.html">Very Basic Front Door Progression</A></LI>
+		<LI CLASS = "Prl" ID=""><A HREF="./Pearl/VeryBasicBackDoor.html">Very Basic Backdoor Progression</A></LI>
+	<H2 CLASS = "H2Uke" ID="OpalH2">Level 2:  Opal</H2>
+		<LI CLASS = "Opl" ID=""><A HREF="./Opal/C3G3.html">C3-G3</A></A></LI>
+		<LI CLASS = "Opl" ID=""><A HREF="./Opal/C3G3.html">Simple Broken Triads</A></A></LI>
+		<LI CLASS = "Opl" ID="OpalCountryside"><A HREF="./Opal/OpalCountryside.html">Textured Countryside of Opal Stones</A></LI>
+		<LI CLASS = "Opl" ID=""><A HREF="./Opal/1stExerciseOnEString.html"><SPAN LANG="de" STYLE="font-style: italic;">Übungen auf der E saite Nr.1</SPAN></A></LI>
+		<LI CLASS = "Opl" ID=""><A HREF="./Opal/2ndExerciseOnEString.html"><SPAN LANG="de" STYLE="font-style: italic;">Übungen auf der E saite Nr.2</SPAN></A></LI>
+		<LI CLASS = "Opl" ID=""><A HREF="./Opal/Libro1Leccion46.html"><SPAN LANG="es" STYLE="font-style: italic;">Libro 1 Leccion 46</SPAN></A></LI>
+	<H2 CLASS = "H2Uke" ID="TurquoiseH2">Level 3:  Turquoise</H2>
+		<LI CLASS = "Trq" ID=""><A HREF="./Turquoise/12barBluesV7.html">Blues Progression</A></LI>
+	<H2 CLASS = "H2Uke" ID="SapphireH2">Level 10:  Sapphire</H2>
+		<LI CLASS = "Sph" ID=""><A HREF="./Sapphire/RoyalRoadExtendedPowerGallop.html">Royal Road Progression:  Heavy Metal Gallop Rhythm with 'Extended' Power Chords</A></A></LI>	
+</OL>
+<!-- Scripts -->
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myDropdownFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+<script>
+function myFunction() {
+    var input, filter, ol, li, a, i, txtValue, pearl, opal, turquoise, peridot, garnet, amethyst, aquamarine; 
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ol = document.getElementById("myOL");
+    li = ol.getElementsByTagName("LI");
+	brs = document.getElementsByTagName('br');
+	pearl = document.getElementById("PearlH2");
+	opal = document.getElementById("OpalH2");
+	turquoise = document.getElementById("TurquoiseH2");
+	peridot = document.getElementById("PeridotH2");
+	garnet = document.getElementById("GarnetH2");
+	amethyst = document.getElementById("AmethystH2");
+	aquamarine = document.getElementById("AquamarineH2");
+	emerald = document.getElementById("EmeraldH2");
+	topaz = document.getElementById("TopazH2");
+	sapphire = document.getElementById("SapphireH2");
+	ruby = document.getElementById("RubyH2");
+	diamond = document.getElementById("DiamondH2");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } 
+		else {
+            li[i].style.display = "none";
+			pearl.style.display = "none";
+			opal.style.display = "none";
+			turquoise.style.display = "none";
+			peridot.style.display = "none";
+			garnet.style.display = "none";
+			amethyst.style.display = "none";
+			aquamarine.style.display = "none";
+			emerald.style.display = "none";
+			topaz.style.display = "none";
+			sapphire.style.display = "none";
+			ruby.style.display = "none";
+			diamond.style.display = "none";
+			while (brs.length) {brs[0].parentNode.removeChild(brs[0]);}
+        }
+    }
+}
+</script>
+<script language="javascript" type="text/javascript" src="../footer.txt"></script>
+</BODY>
+</HTML>
