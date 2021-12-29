@@ -9,18 +9,24 @@
 </HEAD>
 <BODY CLASS="OpalBody">
 <DIV CLASS="OpalNavBar">
-<SPAN STYLE="float: left;">
-	<SPAN CLASS = "NavButtonLeft"><A HREF="../index.html">Home</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./ChromaticScaleOnD.html">First</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./BransleDePoitou.html">Prev</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./PentatonicScaleDMajorTremolando.html">Next</A></SPAN>
-	<SPAN CLASS = "NavButtonMid"><A HREF="./AmazingGrace02.html">Last</A></SPAN>
-	<SPAN CLASS = "NavButtonLeft" STYLE = "opacity:0">Easier</SPAN>
-	<SPAN CLASS = "NavButtonMid" STYLE = "opacity:0">>Harder</SPAN>
-	<SPAN CLASS = "NavButtonLeft" STYLE = "opacity:0">YouTube</SPAN>
-	<SPAN CLASS = "NavButtonLeft"><A HREF="#" onclick="window.print();return false;">Print</A></SPAN>
-</SPAN>
-<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
+	<SPAN STYLE="float: left;">
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">&#x2630;</button>
+				<div id="myDropdown" class="dropdown-content">
+					<A HREF="../index.html">Home</a>
+					<A HREF="../exercises.html#OpalCountryside">Exercises</a>
+					<A HREF="../syllabus.html#OpalCountryside">Syllabus</a>
+					<HR>
+					<A HREF="./BransleDePoitou.html">Prev</A>
+					<A HREF="./BransleDePoitou.html">Next</A>
+					<HR>
+					<A HREF="#" onclick="window.print();return false;">Print</A>
+				</div>
+		</div>
+		<SPAN CLASS = "NavButtonLeft" STYLE="opacity:0"><A HREF="#">Easier</A></SPAN>
+		<SPAN CLASS = "NavButtonMid" STYLE="opacity:0"><A HREF="#">Harder</A></SPAN>
+	</SPAN>
+	<BUTTON ONCLICK="document.getElementById('SettingsModal').style.display='block'" CLASS="Gear">&#x2699;</BUTTON>
 </DIV>
 <!-- The Modal -->
 <div id="SettingsModal" class="w3-modal">
@@ -78,6 +84,26 @@
 </div>
 
 <!-- Scripts -->
+<script>
+/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 <script>
 	function showKey() {
 		var x = document.getElementsByClassName("key1");
@@ -170,18 +196,24 @@
 	</DIV>
 <HR STYLE="clear: both;">
 </DIV>
-<DIV CLASS="key1">
+<DIV CLASS="BPM">
 	<P>
 	<table>
-	<tr><td>Key:&#x2007;&#x2007;</td><td>C Major</td></tr>
+	<tr><td>MM:&#x2007;</td><td>106 BPM</td></tr>
 	</table>
 	</P>
 </DIV>
-<DIV CLASS="MM">MM = 100<BR /><BR /></DIV>
+<DIV CLASS="key1">
+	<P>
+	<table>
+	<tr><td>Key:</td><td>C Major</td></tr>
+	</table>
+	</P>
+</DIV>
 <!-- First Phrase. Measures 1-2 w/repeat -->
-<DIV STYLE="clear: left;">
+<DIV CLASS="tab80" STYLE="clear: left;">
 <!-- Measure 1 -->
-<SPAN STYLE="float: left;">
+<SPAN CLASS="tab" STYLE="float: left;">
 <!--G2--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#x2007;C</SPAN><BR />
 <!--C#--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#x2007;&#8544;</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v</SPAN><BR />
@@ -199,7 +231,7 @@
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&#x2007;&#x2007;4&#x2007;&plus;</SPAN><BR />
 </SPAN>
 <!-- Measure 2 -->
-<SPAN STYLE="float: left;">
+<SPAN CLASS="tab" STYLE="float: left;">
 <!--G2--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;C</SPAN><BR />
 <!--C#--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#8544;</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v</SPAN><BR />
@@ -217,7 +249,7 @@
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&#x2007;&#x2007;4&#x2007;&plus;</SPAN><BR /><BR />
 </SPAN>
 <!-- Measure 3 -->
-<SPAN STYLE="float: left;">
+<SPAN CLASS="tab" STYLE="float: left;">
 <!--G2--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;G</SPAN><BR />
 <!--C#--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#8548;</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v</SPAN><BR />
@@ -234,9 +266,8 @@
 <!--3--><SPAN CLASS="stems1">&#x2007;</SPAN><BR />
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&#x2007;&#x2007;4&#x2007;&plus;</SPAN><BR /><BR />
 </SPAN>
-</DIV>
 <!-- Measure 4 -->
-<SPAN STYLE="float: left;">
+<SPAN CLASS="tab" STYLE="float: left;">
 <!--G2--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;G</SPAN><BR />
 <!--C#--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#8548;</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v</SPAN><BR />
@@ -255,9 +286,9 @@
 </SPAN>
 </DIV>
 <!-- Second Phrase. Measures 5-8 -->
-<DIV STYLE="clear: left;">
+<DIV CLASS="tab80" STYLE="clear: left;">
 <!-- Measure 5 -->
-<SPAN STYLE="float: left;">
+<SPAN CLASS="tab" STYLE="float: left;">
 <!--G2--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#x2007;Am</SPAN><BR />
 <!--C#--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#x2007;&#8565;</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&#x2007;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v</SPAN><BR />
@@ -275,7 +306,7 @@
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&#x2007;&#x2007;4&#x2007;&plus;</SPAN><BR />
 </SPAN>
 <!-- Measure 6 -->
-<SPAN STYLE="float: left;">
+<SPAN CLASS="tab" STYLE="float: left;">
 <!--G2--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;F</SPAN><BR />
 <!--C#--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#8547;</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v</SPAN><BR />
@@ -293,7 +324,7 @@
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&#x2007;&#x2007;4&#x2007;&plus;</SPAN><BR /><BR />
 </SPAN>
 <!-- Measure 7 -->
-<SPAN STYLE="float: left;">
+<SPAN CLASS="tab" STYLE="float: left;">
 <!--G2--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;Dm</SPAN><BR />
 <!--C#--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#8561;</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v</SPAN><BR />
@@ -311,7 +342,7 @@
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&#x2007;&#x2007;4&#x2007;&plus;</SPAN><BR /><BR />
 </SPAN>
 <!-- Measure 8 -->
-<SPAN STYLE="float: left;">
+<SPAN CLASS="tab" STYLE="float: left;">
 <!--G2--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;C</SPAN><BR />
 <!--C#--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#8544;</SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v</SPAN><BR />
@@ -330,7 +361,7 @@
 </SPAN>
 </DIV>
 <!-- Third Phrase. Measures 9-12 -->
-<DIV STYLE="clear: left;">
+<DIV CLASS="tab80" CLASS="tab" STYLE="clear: left;">
 <!-- Measure 9 -->
 <SPAN STYLE="float: left;">
 <!--G2--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#x2007;G</SPAN><BR />
@@ -350,7 +381,7 @@
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&#x2007;&#x2007;4&#x2007;&plus;</SPAN><BR />
 </SPAN>
 <!-- Measure 10 -->
-<SPAN STYLE="float: left;">
+<SPAN CLASS="tab" STYLE="float: left;">
 <!--G2--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;C</SPAN><BR />
 <!--C#--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#8544;<SUP>&nbsp;</SUP></SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v</SPAN><BR />
@@ -368,7 +399,7 @@
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&#x2007;&#x2007;4&#x2007;&plus;</SPAN><BR /><BR />
 </SPAN>
 <!-- Measure 11 -->
-<SPAN STYLE="float: left;">
+<SPAN CLASS="tab" STYLE="float: left;">
 <!--G2--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;G7/D</SPAN><BR />
 <!--C#--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#8548;<SUP>7</SUP></SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v&nbsp;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v</SPAN><BR />
@@ -386,7 +417,7 @@
 <!--C--><SPAN CLASS="count">&#x2007;&#x2007;1&#x2007;&#x2007;&#x2007;2&#x2007;&plus;&#x2007;3&#x2007;&#x2007;&#x2007;4&#x2007;&plus;</SPAN><BR /><BR />
 </SPAN>
 <!-- Measure 12 -->
-<SPAN STYLE="float: left;">
+<SPAN CLASS="tab" STYLE="float: left;">
 <!--G2--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;C</SPAN><BR />
 <!--C#--><SPAN CLASS="Accompaniment1">&#x2007;&#x2007;&#8544;<SUP>&nbsp;</SUP></SPAN><BR />
 <!--RH--><SPAN CLASS="RH">&#x2007;&#x2007;&SquareIntersection;&nbsp;&nbsp;&nbsp;&SquareIntersection;&nbsp;v&nbsp;&SquareIntersection;</SPAN><BR />
