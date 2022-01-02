@@ -593,9 +593,9 @@ input:checked + .slider:before {
 	.stems1{visibility: visible; color: black;}
 	.tab{color: #696969;}
 	.tab60{clear: left; color: #696969; font-size: clamp(12px, 2vw, 2vw);}
-	.tab70{clear: left; color: #696969; font-size: clamp(14px, 1.75vw, 1.75vw);}
-	.tab80{clear: left; color: #696969; font-size: clamp(16px, 1.5vw, 1.5vw);}
-
+	.tab70{clear: left; color: #696969; font-size: clamp(12px, 1.75vw, 1.75vw);}
+	.tab80{clear: left; color: #696969; font-size: clamp(12px, 1.5vw, 1.5vw);}
+	.tab100{clear: left; color: #696969; font-size: clamp(12px, 1.4vw, 1.4vw);}
  
 	.Detail{display: none; font-size: inherit; color: inherit; font-family: inherit;}
 	.Pedagogy{display: none; font-size: smaller; color: inherit; font-family: cursive; color: navy;}
@@ -804,6 +804,7 @@ input:checked + .slider:before {
 	.tab60{color: black; font-size: clamp(12px, 2.5vw, 2.5vw);}
 	.tab70{color: black; font-size: clamp(11px, 2.1vw, 2.1vw);}
 	.tab80{color: black; font-size: clamp(11pt, 2.0vw, 2.0vw);}
+	.tab100{color: black; font-size: 1.53vw;}
 	.tab115{color: black; font-size: 1.4vw;}
 	.TurquoiseNavBar{display: none !important;}
 	#PearlH2 {color: silver; text-decoration: none;}
