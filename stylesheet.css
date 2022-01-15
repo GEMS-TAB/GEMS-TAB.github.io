@@ -6,7 +6,7 @@
 @import url(https://db.onlinewebfonts.com/c/49b13300202f25c085c731d216fab421?family=PT+Mono&display=swap);
 */
 @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
-@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Clicker+Script&family=Marck+Script&family=Cousine&family=DM+Mono:ital,wght@1,500&family=Fira+Code&family=PT+Mono&family=Syne+Mono&display=swap&family=Fredericka+the+Great&family=Special+Elite&family=Cardo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Clicker+Script&family=Marck+Script&family=Cousine&family=DM+Mono:ital,wght@1,500&family=Fira+Code&family=PT+Mono&family=Syne+Mono&display=swap&family=Fredericka+the+Great&family=Special+Elite&family=Cardo&family=Acme&display=swap');
 
 a:link {
 	color: inherit;
@@ -132,7 +132,8 @@ strong{
 	font-size: clamp(18px, 2vw, 2.5vw);
 	font-weight: bold;
 	border: none;
-	border-radius: 2vw;
+	border-radius: 50%;
+	/* border-radius: 2vw; */
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 	}
 	
@@ -576,6 +577,7 @@ input:checked + .slider:before {
 	.count1{visibility: visible; color: #77dd77;}
 	.duo{display: none;}
 	.DuoInline{display: none;}
+	.Filler1{display: inline; color: inherit;}
 	.key0{display: none;}
 	.key1{display: block;}
 	.LHabove{visibility: hidden; color: #c23b22; font-style: italic;}
